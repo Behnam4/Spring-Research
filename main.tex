@@ -86,7 +86,7 @@
   Once the first ball hits the second ball, then they both go at different angles.
 
   \begin{center}
-    \includegraphics[height=7cm, width=10cm]{2.JPG}
+    \includegraphics[height=8cm, width=10cm]{2.JPG}
   \end{center}
 
   \textbf{Elastic collision of balls with the same mass}
@@ -372,5 +372,107 @@ $
   \\
 $
 
+\pagebreak
+
+\textbf{Non-head-on elastic collision of balls with different masses}
+
+\vspace{10px}
+
+A head-on collision is a traffic collision where the front ends of two vehicles such as cars, trains, ships or planes 
+hit each other when travelling in opposite directions, as opposed to a side collision or rear-end collision.
+A head on collision means that the point of impact is on the straight line connecting the center of gravity of each of 
+the objects. The centres of mass of the two bodies should be travelling in the same straight line and approaching each other 
+to call it a head on collision.
+
+\begin{center}
+  \includegraphics[height=11cm, width=10cm]{3.JPG}
+\end{center}
+
+$
+  \\
+  \text{Momentum in the x-direction (conserved)} ~~~ (I): ~~~ m_1 ~ v_{1}+0=m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)
+  \\
+  \\
+  \text{Momentum in the y-direction (conserved)} ~~~ (II): ~~~ 0=m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)
+  \\
+  \\
+  \text{Kinetic energy (conserved and scalar quantity)} ~~~ (III): 
+  \dfrac{1}{2} m_1 ~ v^2_1+0=\dfrac{1}{2} m_1 ~ u^2_1+\dfrac{1}{2} m_2 ~ u^2_2
+$
+
+\vspace{10px}
+
+We have got three equations meaning we only can find 3 unknown variables. Assuming we are given 
+$m_1, m_2, v_1,$ and $u_1$ we can find $u_2, ~ \theta_1,$ and $\theta_2$. From equation $(III)$ we have
+
+$
+  \\
+  m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2
+  \\
+  \\
+  \therefore ~~~ \dfrac{m_1}{m_2} \left(v_1^2-u_1^2\right)=u_2^2
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{u_2=\sqrt{\dfrac{m_1}{m_2} \left(v_1^2-u_1^2\right)}} ~~~~ \checkmark
+  \\
+  \\
+  \\
+$
+
+Now that we have $u_2$, we are able to find $\theta_1$ and $\theta_2$.
+
+$
+\\
+  (IV): ~~~ \begin{cases}
+    m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
+    \\
+    \\
+    m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)=0
+  \end{cases}
+  \\
+  \\
+$
+
+Squaring and summing $(IV)$ give us
+
+$
+  \\
+  \\
+  m_1^2 ~ u_1^2 \left[cos^2(\theta_1)+sin^2(\theta_1)\right]=m_2^2 ~ u_2^2 ~ sin^2(\theta_2)
+  +\left[m_1^2 ~ v_1^2+m_2^2 ~ u_2^2 ~ cos^2(\theta_2)-2m_1 ~ v_1 ~ m_2 ~ u_2 ~ cos(\theta_2)\right]
+  \\
+  \\
+  m_1^2 ~ u_1^2=m_2^2 ~ u_2^2 ~ sin^2(\theta_2)+m_1^2 ~ v_1^2 +m_2^2 ~ u_2^2 ~ cos^2(\theta_2)-2m_1 ~ v_1 ~ m_2 ~ u_2 ~ cos(\theta_2)
+  \\
+  \\
+  m_1^2 ~ u_1^2=m_2^2 ~ u_2^2 \left[sin^2(\theta_2)+cos^2(\theta_2)\right]+m_1^2 ~ v_1^2-2m_1 ~ v_1 ~ m_2 ~ u_2 ~ cos(\theta_2)
+  \\
+  \\
+  m_1^2 ~ u_1^2=m_2^2 ~ u_2^2+m_1^2 ~ v_1^2-2m_1 ~ v_1 ~ m_2 ~ u_2 ~ cos(\theta_2)
+  \\
+  \\
+  cos(\theta_2)=\dfrac{
+    -m_1^2 ~ u_1^2+m_2^2 ~ u_2^2+m_1^2 ~ v_1^2 
+  }{
+    2 ~ m_1 ~ v_1 ~ m_2 ~ u_2
+  }=\dfrac{
+    m_1^2 ~ \left(v_1^2-u_1^2\right)+m_2^2 ~u_2^2 
+  }{
+    2 m_1 ~ m_2 ~ v_1 ~ u_2
+  }
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \theta_2=cos^{-1}\left[
+      \dfrac{
+        m_1^2 ~ \left(v_1^2-u_1^2\right)+m_2^2 ~u_2^2 
+      }{
+        2 m_1 ~ m_2 ~ v_1 ~ u_2
+      }
+    \right]
+  } ~~~~ \checkmark
+$
 
 \end{document}
