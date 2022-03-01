@@ -33,6 +33,7 @@
 \newcommand{\scriptr}{\mathcalligra{r}\,}
 \newcommand{\boldscriptr}{\pmb{\mathcalligra{r}}\,}
 
+\definecolor{red}{HTML}{F30000}
 
 \setlength{\arrayrulewidth}{0.5mm}
 \setlength{\tabcolsep}{18pt}
@@ -374,7 +375,7 @@ $
 
 \pagebreak
 
-\textbf{Non-head-on elastic collision of balls with different masses}
+\textbf{Non-head-on elastic collision of balls with different masses (1)}
 
 \vspace{10px}
 
@@ -564,8 +565,9 @@ $
 
 Maximizing the energy transferred to the second ball? (Largest kinetic energy)
 
+\vspace{10px}
 
-\textbf{What is an elastic collision?}
+\textbf{Some examples}
 
 \vspace{10px}
 
@@ -636,6 +638,107 @@ $
       }
     \right]=0^{\circ} 
   \end{cases}
+$
+
+\pagebreak
+
+\textbf{Non-head-on elastic collision of balls with different masses (2)}
+
+\vspace{10px}
+
+A head-on collision is a traffic collision where the front ends of two vehicles such as cars, trains, ships or planes 
+hit each other when travelling in opposite directions, as opposed to a side collision or rear-end collision.
+A head on collision means that the point of impact is on the straight line connecting the center of gravity of each of 
+the objects. The centres of mass of the two bodies should be travelling in the same straight line and approaching each other 
+to call it a head on collision.
+
+\begin{center}
+  \includegraphics[height=11cm, width=10cm]{3.JPG}
+\end{center}
+
+$
+  \\
+  \text{Momentum in the x-direction (conserved)} ~~~ (I): ~~~ m_1 ~ v_{1}+0=m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)
+  \\
+  \\
+  \text{Momentum in the y-direction (conserved)} ~~~ (II): ~~~ 0=m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)
+  \\
+  \\
+  \text{Kinetic energy (conserved and scalar quantity)} ~~~ (III): 
+  \dfrac{1}{2} m_1 ~ v^2_1+0=\dfrac{1}{2} m_1 ~ u^2_1+\dfrac{1}{2} m_2 ~ u^2_2
+$
+
+\vspace{10px}
+
+Assuming we are given $m_1, m_2, v_1,$ and $\theta_2$. Let's define  \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}, ~~ cos(\theta_2) \equiv \mathbf{C}$}.
+
+\vspace{10px}
+
+$
+  \begin{cases}
+    m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
+    \\
+    \\
+    m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)=0
+  \end{cases} \Longrightarrow 
+  \begin{cases}
+    m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+    \\
+    \\
+    m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
+  \end{cases}
+  \\
+  \\
+  \\
+  \\
+  (III) \Longrightarrow  m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
+  \Longrightarrow \boxed{
+    u_1=\sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2} \equiv \textcolor{red}{\mathbf{U_1}}
+  } ~~~~ \checkmark
+  \\
+  \\
+  \\
+  \\
+  \\
+  \therefore ~~~ \begin{cases}
+    m_1 ~ \textcolor{red}{\mathbf{U_1}} ~ cos(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+    \\
+    \\
+    m_1 ~ \textcolor{red}{\mathbf{U_1}} ~ sin(\theta_1)-m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
+  \end{cases}
+  \\
+  \\
+$
+
+\vspace{10px}
+
+Squaring and summing
+
+\vspace{10px}
+
+$
+  \\
+  \begin{cases}
+    m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}} ~ cos^2(\theta_1)+m^2_2 ~ u^2_2 ~ \textcolor{red}{\mathbf{C^2}}=m^2_1 ~ v^2_{1}
+    \\
+    \\
+    m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}} ~ sin^2(\theta_1)-m^2_2 ~ u^2_2 ~ \textcolor{red}{\mathbf{S^2}}=0
+  \end{cases}
+  \\
+  \\
+  \rule{6cm}{1pt}
+  \\
+  \\
+  m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}} \left[cos^2(\theta_1)+sin^2(\theta_1)\right]+m^2_2 ~ u^2_2 \left(\textcolor{red}{\mathbf{C^2}}-\textcolor{red}{\mathbf{S^2}}\right)=m^2_1 ~ v^2_{1}
+  \\
+  \\
+  \\
+  m^2_1 \left[\textcolor{red}{\mathbf{U^2_1}}-v^2_1\right]+m^2_2 ~ u^2_2 \left(\textcolor{red}{\mathbf{C^2}}-\textcolor{red}{\mathbf{S^2}}\right)=0
+  \\
+  \\
+  \\
+  u^2_2=\dfrac{m^2_1 ~ \left(v^2_1-\textcolor{red}{\mathbf{U^2_1}}\right)}{m^2_2 ~ \left(\textcolor{red}{\mathbf{C^2}}-\textcolor{red}{\mathbf{S^2}}\right)}
+  =\dfrac{m^2_1 ~ \left[v^2_1-\left(v^2_1-\dfrac{m_2}{m_1} ~ u^2_2\right) \right]}{m^2_2 ~ \left(\textcolor{red}{\mathbf{C^2}}-\textcolor{red}{\mathbf{S^2}}\right)}
 $
 
 
