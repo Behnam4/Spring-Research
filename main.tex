@@ -875,5 +875,163 @@ $
     \right)
   } ~~~~ \checkmark
 $
+  
+\pagebreak
+
+$
+  \\
+  u_2=\dfrac{
+    2 m_1 ~ v_1 ~ \textcolor{red}{\mathbf{K}}
+  }{
+    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
+  }
+  =\dfrac{
+    2 m_1 ~ v_1 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
+  }{
+    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]^2}
+  }
+  \\
+  \\
+  \\
+  \begin{cases}
+    f=2 m_1 ~ v_1 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
+    \\
+    \\
+    \\
+    g=\sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]^2}
+    \\
+    \\
+    \\
+    \dfrac{df}{d\theta_2}=-2m_1 ~ v_1 \left[cos(\theta_1) ~ sin(\theta_2)+sin(\theta_1) ~ cos(\theta_2)\right]
+    \\
+    \\
+    \\
+    \dfrac{dg}{d\theta_2}=-\dfrac{
+      4m_1 ~ m_2 \left[cos(\theta_1) ~ sin(\theta_2)+sin(\theta_1) ~ cos(\theta_2)\right] \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
+    }{
+      \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]^2}
+    }
+  \end{cases}
+  \\
+  \\
+  \text{Trig angle identities:}
+  \\
+  \\
+  \begin{cases}
+    sin(\theta_1+\theta_2)=sin(\theta_1) ~ cos(\theta_2)+cos(\theta_1) ~ sin(\theta_2)
+    \\
+    \\
+    sin(\theta_1-\theta_2)=sin(\theta_1) ~ cos(\theta_2)-cos(\theta_1) ~ sin(\theta_2)
+    \\
+    \\
+    cos(\theta_1+\theta_2)=cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)
+    \\
+    \\
+    cos(\theta_1-\theta_2)=cos(\theta_1) ~ cos(\theta_2)+sin(\theta_1) ~ sin(\theta_2)
+  \end{cases}
+  \\
+  \\
+  \\
+  \therefore ~~~ \begin{cases}
+    f=2 m_1 ~ v_1 ~ cos(\theta_1+\theta_2)
+    \\
+    \\
+    \\
+    g=\sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
+    \\
+    \\
+    \\
+    \dfrac{df}{d\theta_2}=-2m_1 ~ v_1 ~ sin(\theta_1+\theta_2)
+    \\
+    \\
+    \\
+    \dfrac{dg}{d\theta_2}=-\dfrac{
+      4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
+    }{
+      \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
+    }
+  \end{cases}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    u_2=\dfrac{f}{g}, ~~~ \dfrac{d u_2}{d\theta_2}=\dfrac{\dfrac{df}{d\theta_2} ~ g-f ~ \dfrac{dg}{d\theta_2}}{g^2}
+  }
+  \\
+  \\
+  \\
+  \\
+  \textbf{Numerator}: 
+  \\
+  \\
+  -2m_1 ~ v_1 ~ sin(\theta_1+\theta_2) ~ \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
+  -2 m_1 ~ v_1 ~ cos(\theta_1+\theta_2) ~ -\dfrac{
+    4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
+  }{
+    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
+  }
+  \\
+  \\
+  \text{If} ~ \textcolor{red}{\sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)} \equiv ~ \mathbf{W}} ~ \text{then}
+  \\
+  \\
+  =-2m_1 ~ v_1 ~ sin(\theta_1+\theta_2) ~ \textcolor{red}{\mathbf{W}}
+  -2 m_1 ~ v_1 ~ cos(\theta_1+\theta_2) ~ -\dfrac{
+    4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
+  }{
+    \textcolor{red}{\mathbf{W}}
+  }
+  \\
+  \\
+  =-2m_1 ~ v_1 \left[sin(\theta_1+\theta_2) ~ \textcolor{red}{\mathbf{W}}+ cos(\theta_1+\theta_2)\right]
+  -\dfrac{4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)}{\textcolor{red}{\mathbf{W}}}
+  \\
+  \\
+  \\
+  \rule{18cm}{1pt}
+  \\
+  \\
+  \dfrac{d u_2}{d\theta_2}=\dfrac{
+    -2m_1 ~ v_1 \left[sin(\theta_1+\theta_2) ~ \textcolor{red}{\mathbf{W}}+ cos(\theta_1+\theta_2)\right]
+    -\dfrac{4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)}{\textcolor{red}{\mathbf{W}}}
+  }{
+    \textcolor{red}{\mathbf{W}}
+  }
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \dfrac{d u_2}{d\theta_2}=\dfrac{
+      -2m_1 ~ v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
+      -4 m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
+    }{
+      \textcolor{red}{\mathbf{W}}^2
+    }
+  } ~~~~ \checkmark
+$
+
+\vspace{10px}
+
+The kinetic energy of the second ball after the collision is $K.E_2=\dfrac{1}{2} m_2 ~ u^2_2$ which is at max when $u_2$ is
+at its maximum based on the angle the second ball is scattered. Now that we have $\dfrac{d u_2}{d\theta_2}$ by equating it
+to zero, we can find the $\theta_2$ at which $u_2$ is maximum, therefore $K.E_2$ is at its highest.
+
+\vspace{10px}
+
+$
+  \\
+  \dfrac{d u_2}{d\theta_2}=0 \Longrightarrow -2m_1 ~ v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
+  -4 m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)=0
+  \\
+  \\
+  \\
+  -2m_1 ~ v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
+  =4 m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
+  \\
+  \\
+  \\
+  -v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
+  =4 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
+$
 
 \end{document}
