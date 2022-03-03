@@ -677,141 +677,151 @@ Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ and $cos(\theta_2
 
 $
   \begin{cases}
-    m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
+    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
     \\
     \\
-    m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)=0
-  \end{cases} \Longrightarrow 
-  \begin{cases}
-    m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)=0
     \\
     \\
-    m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
+    (3): ~ m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
   \end{cases}
   \\
   \\
   \\
-  \\
-  (III) \Longrightarrow  m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
-  \Longrightarrow \boxed{
-    u_1=\sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2} \equiv \textcolor{red}{\mathbf{U_1}}
+  \text{From} ~ (3) ~~ \therefore ~~~ \boxed{
+    \begin{cases}
+      (4): ~ u^2_1=v^2_1-\dfrac{m_2}{m_1} ~ u^2_2
+      \\
+      \\
+      (5): ~ v^2_1=u^2_1+\dfrac{m_2}{m_1} ~ u^2_2
+    \end{cases}
   } ~~~~ \checkmark
   \\
   \\
   \\
-  \\
-  \\
-  \therefore ~~~ \begin{cases}
-    m_1 ~ \textcolor{red}{\mathbf{U_1}} ~ cos(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
-    \\
-    \\
-    m_1 ~ \textcolor{red}{\mathbf{U_1}} ~ sin(\theta_1)-m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
-  \end{cases}
-  \\
-  \\
 $
 
-\vspace{10px}
-
-Squaring and summing
+Squaring and summing $(1)$ and $(2)$ gives us:
 
 \vspace{10px}
 
 $
-  \\
   \begin{cases}
-    m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}} ~ cos^2(\theta_1)+m^2_2 ~ u^2_2 ~ \textcolor{red}{\mathbf{C^2}}+2m_1 ~ \textcolor{red}{\mathbf{U_1}} ~ cos(\theta_1) \times m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m^2_1 ~ v^2_{1}
+    m^2_1 ~ u^2_1 ~ cos^2(\theta_1)+m^2_2 ~ u^2_2 ~ cos^2(\theta_2)+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ cos(\theta_1) ~ cos(\theta_2)=m^2_1 ~ v^2_{1}
     \\
     \\
-    m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}} ~ sin^2(\theta_1)+m^2_2 ~ u^2_2 ~ \textcolor{red}{\mathbf{S^2}}-2 m_1 ~ \textcolor{red}{\mathbf{U_1}} ~ sin(\theta_1) \times m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
+    m^2_1 ~ u^2_1 ~ sin^2(\theta_1)+m^2_2 ~ u^2_2 ~ sin^2(\theta_2)-2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ sin(\theta_1) ~ sin(\theta_2)=0
   \end{cases}
   \\
   \\
-  \rule{11cm}{1pt}
+  \rule{13cm}{1pt}
   \\
   \\
-  m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}} \left[cos^2(\theta_1)+sin^2(\theta_1)\right]
-  +m^2_2 ~ u^2_2 \left[\textcolor{red}{\mathbf{C^2}}+\textcolor{red}{\mathbf{S^2}}\right]
-  +2 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{U_1}} ~ u_2 \left[\textcolor{red}{\mathbf{C}} ~ cos(\theta_1)-\textcolor{red}{\mathbf{S}} ~ sin(\theta_1)\right]=m^2_1 ~ v^2_{1}
+  m^2_1 ~ u^2_1 \left[cos^2(\theta_1)+sin^2(\theta_1)\right]
+  +m^2_2 ~ u^2_2 \left[cos^2(\theta_2)+sin^2(\theta_2)\right]
   \\
   \\
-  \\
-  m^2_1 ~ \textcolor{red}{\mathbf{U^2_1}}
-  +m^2_2 ~ u^2_2
-  +2 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{U_1}} ~ u_2 \left[\textcolor{red}{\mathbf{C}} ~ cos(\theta_1)-\textcolor{red}{\mathbf{S}} ~ sin(\theta_1)\right]=m^2_1 ~ v^2_{1}
-  \\
-  \\
-  \\
-  m^2_1 ~ \left[v^2_1-\dfrac{m_2}{m_1} ~ u^2_2\right]
-  +m^2_2 ~ u^2_2
-  +2 m_1 ~ m_2 ~ \left[\sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2}\right] ~ u_2 \left[\textcolor{red}{\mathbf{C}} ~ cos(\theta_1)-\textcolor{red}{\mathbf{S}} ~ sin(\theta_1)\right]
+  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
   =m^2_1 ~ v^2_{1}
   \\
   \\
   \\
-  m^2_1 ~ v^2_1
-  -m_1 ~ m_2 ~ u^2_2
-  +m^2_2 ~ u^2_2
-  +2 m_1 ~ m_2 ~ \sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2} ~ u_2 \left[\textcolor{red}{\mathbf{C}} ~ cos(\theta_1)-\textcolor{red}{\mathbf{S}} ~ sin(\theta_1)\right]=m^2_1 ~ v^2_{1}
+  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2 
+  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
+  =m^2_1 ~ v^2_{1}
+  \\
+  \\
+$
+
+Let's define \textcolor{red}{$cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2) \equiv ~ \mathbf{K}$}
+and from $(5)$ we have the following.
+
+\vspace{10px}
+
+$
+  \\
+  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2 
+  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}
+  =m^2_1 ~ v^2_{1}
   \\
   \\
   \\
-  -m_1 ~ m_2 ~ u^2_2
-  +m^2_2 ~ u^2_2
-  +2 m_1 ~ m_2 ~ \sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2} ~ u_2 \left[\textcolor{red}{\mathbf{C}} ~ cos(\theta_1)-\textcolor{red}{\mathbf{S}} ~ sin(\theta_1)\right]=0
+  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m^2_1 \left[u^2_1+\dfrac{m_2}{m_1} ~ u^2_2\right]
   \\
   \\
   \\
-  -m_1 ~ m_2 ~ u^2_2
-  +m^2_2 ~ u^2_2
-  +2 m_1 ~ m_2 ~ cos(\theta_1+\theta_2) ~ \sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2} ~ u_2=0
+  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m^2_1 ~ u^2_1+m_1 ~ m_2 ~ u^2_2
   \\
   \\
   \\
-  u^2_2 \left[-m_1 ~ m_2+m^2_2 \right]
-  =-2 m_1 ~ m_2 ~ cos(\theta_1+\theta_2) ~ \sqrt{v^2_1-\dfrac{m_2}{m_1} ~ u^2_2} ~ u_2
+  m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m_1 ~ m_2 ~ u^2_2
   \\
   \\
   \\
-  u^4_2 \left[-m_1 ~ m_2+m^2_2 \right]^2
-  =4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) ~ u^2_2 \left[v^2_1-\dfrac{m_2}{m_1} ~ u^2_2\right]
+  2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=u^2_2 \left[m_1 ~ m_2-m^2_2\right]
   \\
   \\
   \\
-  u^2_2 \left[-m_1 ~ m_2+m^2_2 \right]^2
-  =4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) ~ \left[v^2_1-\dfrac{m_2}{m_1} ~ u^2_2\right]
+  2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}=u_2 \left[m_1 ~ m_2-m^2_2\right]
   \\
   \\
   \\
-  u^2_2 \left[-m_1 ~ m_2+m^2_2 \right]^2
-  =4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) ~ v^2_1
-  -4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) \dfrac{m_2}{m_1} ~ u^2_2
+  u_2=\dfrac{2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1 ~ m_2-m^2_2}
+  =\dfrac{2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_2 \left(m_1-m_2\right)}
   \\
   \\
   \\
-  u^2_2 \left[-m_1 ~ m_2+m^2_2 \right]^2+4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) \dfrac{m_2}{m_1} ~ u^2_2
-  =4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) ~ v^2_1
+  \therefore ~~~ \boxed{
+    (6): ~ u_2=\dfrac{2m_1 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2}
+  } ~~~~ \checkmark
   \\
   \\
   \\
-  u^2_2 \left[
-    \left(m^2_2-m_1 ~ m_2\right)^2+4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) \dfrac{m_2}{m_1}
-  \right]
-  =4 m^2_1 ~ m^2_2 ~ cos^2(\theta_1+\theta_2) ~ v^2_1
+  \therefore ~~~ \dfrac{u_2}{u_1}=\dfrac{2m_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2}
+  \\
+  \\
+  \\
+  \text{Squaring $(6)$ and plugging in $(4)$}
+  \\
+  \\
+  \\
+  \left(\dfrac{u_2}{u_1}\right)^2=\dfrac{\left(2m_1 ~ \textcolor{red}{\mathbf{K}}\right)^2}{\left(m_1-m_2\right)^2}
+  \\
+  \\
+  \\
+  u^2_2 ~ \left(m_1-m_2\right)^2=4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ u_1
+  =4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ \left(v^2_1-\dfrac{m_2}{m_1} ~ u^2_2\right)
+  \\
+  \\
+  \\
+  u^2_2 ~ \left(m_1-m_2\right)^2
+  =4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1-4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2} ~ u^2_2
+  \\
+  \\
+  \\
+  u^2_2 \left[\left(m_1-m_2\right)^2+4m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2} \right]=4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1
+  \\
+  \\
+  \\
+  u^2_2=\dfrac{4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1}{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
+  \\
+  \\
+  \\
+  u_2=\dfrac{
+    2 m_1 ~ \textcolor{red}{\mathbf{K}} ~ v_1
+  }{
+    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
+  }
   \\
   \\
   \\
   \therefore ~~~ \boxed{
     u_2=\dfrac{
-      2 m_1 ~ m_2 ~ cos(\theta_1+\theta_2) ~ v_1
+      2 m_1 ~ v_1 ~ \left[cos(\theta_1) ~ \textcolor{red}{\mathbf{C}}-sin(\theta_1) ~ \textcolor{red}{\mathbf{S}}\right]
     }{
-      \sqrt{m^4_2+m^2_1 ~ m^2_2-2m_1 ~ m^3_2+4 m_1 ~ m^3_2 ~ cos^2(\theta_1+\theta_2)}
+      \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ \textcolor{red}{\mathbf{C}}-sin(\theta_1) ~ \textcolor{red}{\mathbf{S}}\right]^2}
     }
   } ~~~~ \checkmark
-  \\
-  \\
 $
-
-\textcolor{red}{Problem: We do not have $\theta_1$.}
 
 \end{document}
