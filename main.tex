@@ -702,140 +702,95 @@ $
   \end{cases}
   \\
   \\
+$
+
+From $(1)$ and $(2)$ and by the Cramer's Rule we have:
+
+\vspace{10px}
+
+$
   \\
-  \text{From} ~ (3) ~~ \therefore ~~~ \boxed{
+  \begin{pmatrix}
+    m_1 ~ u_1 && m_2 ~ cos(\theta_2)
+    \\
+    m_1 ~ u_1 && m_2 ~ sin(\theta_2)
+  \end{pmatrix} \begin{pmatrix}
+    cos(\theta_1)
+    \\
+    u_2
+  \end{pmatrix}=\begin{pmatrix}
+    m_1 ~ v_1
+    \\
+    0
+  \end{pmatrix}
+  \\
+  \\
+  \\
+  cos(\theta_1)=\dfrac{
+    \begin{vmatrix}
+      m_1 ~ v_1 && m_2 ~ cos(\theta_2)
+      \\
+      0 && m_2 ~ sin(\theta_2)
+    \end{vmatrix}
+  }{
+    \begin{vmatrix}
+      m_1 ~ u_1 && m_2 ~ cos(\theta_2)
+      \\
+      m_1 ~ u_1 && m_2 ~ sin(\theta_2)
+    \end{vmatrix}
+  } ~~~ \text{and} ~~~ u_2=\dfrac{
+    \begin{vmatrix}
+      m_1 ~ u_1 && m_1 ~ v_1
+      \\
+      m_1 ~ u_1 && 0
+    \end{vmatrix}
+  }{
+    \begin{vmatrix}
+      m_1 ~ u_1 && m_2 ~ cos(\theta_2)
+      \\
+      m_1 ~ u_1 && m_2 ~ sin(\theta_2)
+    \end{vmatrix}
+  }
+  \\
+  \\
+  \\
+  \\
+  \Longrightarrow \begin{cases}
+    cos(\theta_1)=\dfrac{m_1 ~ m_2 ~ v_1 ~ sin(\theta_2)-0}{m_1 ~ m_2 ~ u_1 ~ sin(\theta_2)-m_1 ~ m_2 ~ u_1 ~ cos(\theta_2)}
+    \\
+    \\
+    u_2=-\dfrac{m_1^2 ~ u_1 ~ v_1}{m_1 ~ m_2 ~ u_1 ~ sin(\theta_2)-m_1 ~ m_2 ~ u_1 ~ cos(\theta_2)}
+  \end{cases}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
     \begin{cases}
-      (4): ~ u^2_1=v^2_1-\dfrac{m_2}{m_1} ~ u^2_2
+      cos(\theta_1)=\dfrac{v_1}{u_1} \dfrac{sin(\theta_2)}{\bigg(sin(\theta_2)-cos(\theta_2)\bigg)}
       \\
       \\
-      (5): ~ v^2_1=u^2_1+\dfrac{m_2}{m_1} ~ u^2_2
+      u_2=-\dfrac{m_1 ~ v_1}{m_2 \bigg(sin(\theta_2)-cos(\theta_2)\bigg)}
     \end{cases}
   } ~~~~ \checkmark
-  \\
-  \\
-  \\
 $
 
-Squaring and summing $(1)$ and $(2)$ gives us:
+% Equations $(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ 
+% and $\theta_2$. We can find $u_2$, and $\theta_1$. Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ 
+% and $cos(\theta_2) \equiv \mathbf{C}$}. Rewritting equations $(6)$ and $(7)$ gives us: 
 
-\vspace{10px}
+% \vspace{10px}
 
-$
-  \begin{cases}
-    m^2_1 ~ u^2_1 ~ cos^2(\theta_1)+m^2_2 ~ u^2_2 ~ cos^2(\theta_2)+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ cos(\theta_1) ~ cos(\theta_2)=m^2_1 ~ v^2_{1}
-    \\
-    \\
-    m^2_1 ~ u^2_1 ~ sin^2(\theta_1)+m^2_2 ~ u^2_2 ~ sin^2(\theta_2)+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ sin(\theta_1) ~ sin(\theta_2)=0
-  \end{cases}
-  \\
-  \\
-  \rule{13cm}{1pt}
-  \\
-  \\
-  m^2_1 ~ u^2_1 \left[cos^2(\theta_1)+sin^2(\theta_1)\right]
-  +m^2_2 ~ u^2_2 \left[cos^2(\theta_2)+sin^2(\theta_2)\right]
-  \\
-  \\
-  +4 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-  =m^2_1 ~ v^2_{1}
-  \\
-  \\
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2 
-  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-  =m^2_1 ~ v^2_{1}
-  \\
-  \\
-$
-
-Let's define \textcolor{red}{$cos(\theta_1) ~ cos(\theta_2)+sin(\theta_1) ~ sin(\theta_2) \equiv ~ \mathbf{K}$}
-and from $(5)$ we have the following.
-
-\vspace{10px}
-
-$
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2 
-  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}
-  =m^2_1 ~ v^2_{1}
-  \\
-  \\
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m^2_1 \left[u^2_1+\dfrac{m_2}{m_1} ~ u^2_2\right]
-  \\
-  \\
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m^2_1 ~ u^2_1+m_1 ~ m_2 ~ u^2_2
-  \\
-  \\
-  \\
-  m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m_1 ~ m_2 ~ u^2_2
-  \\
-  \\
-  \\
-  2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=u^2_2 \left[m_1 ~ m_2-m^2_2\right]
-  \\
-  \\
-  \\
-  2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}=u_2 \left[m_1 ~ m_2-m^2_2\right]
-  \\
-  \\
-  \\
-  u_2=\dfrac{2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1 ~ m_2-m^2_2}
-  =\dfrac{2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_2 \left(m_1-m_2\right)}
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    (6): ~ u_2=\dfrac{2m_1 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2}
-  } ~~~~ \checkmark
-$
-
-\pagebreak
-
-Equation $(2)$ states that 
-
-\vspace{10px}
-
-$
-  m_1 ~ u_1 ~ sin(\theta_1)+m_2 ~ u_2 ~ sin(\theta_2)=0 
-  \Longrightarrow sin(\theta_1)=-sin(\theta_2) ~  \dfrac{m_2 ~ u_2}{m_1 ~ u_1}
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    (7): ~ \theta_1=sin^{-1} \left(
-      -sin(\theta_2) ~  \dfrac{m_2 ~ u_2}{m_1 ~ u_1}
-    \right)
-  } ~~~~ \checkmark
-  \\
-  \\
-$
-
-Equations $(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ 
-and $\theta_2$. We can find $u_2$, and $\theta_1$. Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ 
-and $cos(\theta_2) \equiv \mathbf{C}$}. Rewritting equations $(6)$ and $(7)$ gives us: 
-
-\vspace{10px}
-
-$
-  \\
-  \begin{cases}
-    u_2=\dfrac{2m_1 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2}
-    \\
-    \\
-    \theta_1=sin^{-1} \left(
-      -\textcolor{red}{\mathbf{S}} ~  \dfrac{m_2 ~ u_2}{m_1 ~ u_1}
-    \right)
-  \end{cases}
-$
+% $
+%   \\
+%   result
+% $
 
 
-\pagebreak
+% \pagebreak
 
-The kinetic energy of the second ball after the collision is $K.E_2=\dfrac{1}{2} m_2 ~ u^2_2$ which is at max when $u_2$ is
-at its maximum based on the angle the second ball is scattered. Now that we have $\dfrac{d u_2}{d\theta_2}$ by equating it
-to zero, we can find the $\theta_2$ at which $u_2$ is maximum, therefore $K.E_2$ is at its highest.
+% The kinetic energy of the second ball after the collision is $K.E_2=\dfrac{1}{2} m_2 ~ u^2_2$ which is at max when $u_2$ is
+% at its maximum based on the angle the second ball is scattered. Now that we have $\dfrac{d u_2}{d\theta_2}$ by equating it
+% to zero, we can find the $\theta_2$ at which $u_2$ is maximum, therefore $K.E_2$ is at its highest.
 
 
 \end{document}
