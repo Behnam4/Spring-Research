@@ -752,7 +752,60 @@ $
 
 \pagebreak
 
-In trigonometry we learned that 
+In trigonometry we learned that $\mathbf{A} ~ sin(\theta)-\mathbf{B} ~ cos(\theta)=\mathbf{C} \equiv \mathbf{R} ~ sin(\theta-\alpha)$ 
+where $\mathbf{R}=\sqrt{\mathbf{A}^2+\mathbf{B}^2}$ and $\alpha=tan^{-1} \left(\dfrac{\mathbf{B}}{\mathbf{A}}\right)$. So let's use this 
+identity to solve eqution $(6)$.
+
+$
+  \\
+  \\
+  \textcolor{red}{\mathbf{S}} ~ cos(\theta_1)- \textcolor{red}{\mathbf{C}} ~ sin(\theta_1)=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
+  \\
+  \\
+  \\
+  \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2} ~ sin \bigg(\theta_1-\alpha\bigg), ~~ \alpha=tan^{-1} \left(\dfrac{\textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\right)
+  \\
+  \\
+  \\
+  \therefore ~~~ \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2} ~ sin \bigg(\theta_1-\alpha\bigg)=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    (7): ~ \theta_1=sin^{-1} \bigg(\dfrac{
+      \textcolor{red}{\mathbf{S}} ~ v_1
+    }{
+      u_1 ~ \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2}
+    }\bigg)+tan^{-1} \left(\dfrac{\textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\right)
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+Earlier we found $u_2$ and in order to find its value we needed the value of $\theta_1$. Now by knowing $\theta_1$ we can compute $u_2$.
+
+\vspace{10px}
+
+$
+  \\
+  u_2=-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{m_2 ~ \mathbf{S}}
+  =-\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ \mathbf{S}}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    (8): ~ u_2=-\dfrac{m_1 ~ u_1}{m_2 ~ \mathbf{S}} ~ 
+    sin \bigg[ 
+      sin^{-1} \bigg(\dfrac{
+      \textcolor{red}{\mathbf{S}} ~ v_1
+      }{
+        u_1 ~ \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2}
+      }\bigg)+tan^{-1} \left(\dfrac{\textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\right)
+    \bigg]
+  } ~~~~ \checkmark
+$
+
+
 
 % Equations $(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ 
 % and $\theta_2$. We can find $u_2$, and $\theta_1$. Rewritting equations $(6)$ and $(7)$ gives us: 
