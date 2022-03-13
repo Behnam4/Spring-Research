@@ -686,97 +686,76 @@ $
   \\
   $
 
-  Knowing that $\theta_1 > 0$ and $\theta_2 < 0$ we can rewrite the above as:
+  Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ and $cos(\theta_2) \equiv \mathbf{C}$}. Knowing that 
+  $\theta_1 > 0$ and $\theta_2 < 0$ we can rewrite the above as:
 
   $
   \\
   \\
   \begin{cases}
-    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
+    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
     \\
     \\
-    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)+m_2 ~ u_2 ~ sin(\theta_2)=0
+    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
     \\
     \\
     (3): ~ m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
   \end{cases}
+  \longrightarrow
+  \begin{cases}
+    (4): ~ m_1 ~ u_1 ~ \mathbf{K}+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+    \\
+    \\
+    (5): ~  m_1 ~ u_1 ~ \mathbf{L}+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
+  \end{cases}
+  \\
+  \\
+  \\
+  \longrightarrow
+  m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=-m_1 ~ u_1 ~ \mathbf{L} 
+  \Longrightarrow 
+  u_2=-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{m_2 ~ \mathbf{S}}
   \\
   \\
 $
 
-From $(1)$ and $(2)$ and by the Cramer's Rule we have:
+Plugging in the above result into equation $(4)$ gives us:
 
 \vspace{10px}
 
 $
   \\
-  \begin{pmatrix}
-    m_1 ~ u_1 && m_2 ~ cos(\theta_2)
-    \\
-    m_1 ~ u_1 && m_2 ~ sin(\theta_2)
-  \end{pmatrix} \begin{pmatrix}
-    cos(\theta_1)
-    \\
-    u_2
-  \end{pmatrix}=\begin{pmatrix}
-    m_1 ~ v_1
-    \\
-    0
-  \end{pmatrix}
+  m_1 ~ u_1 ~ \mathbf{K}+m_2 ~ \bigg(-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{m_2 ~ \mathbf{S}}\bigg) ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+  \Longrightarrow
+  m_1 ~ u_1 ~ \mathbf{K}-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{\mathbf{S}} ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
   \\
   \\
   \\
-  cos(\theta_1)=\dfrac{
-    \begin{vmatrix}
-      m_1 ~ v_1 && m_2 ~ cos(\theta_2)
-      \\
-      0 && m_2 ~ sin(\theta_2)
-    \end{vmatrix}
-  }{
-    \begin{vmatrix}
-      m_1 ~ u_1 && m_2 ~ cos(\theta_2)
-      \\
-      m_1 ~ u_1 && m_2 ~ sin(\theta_2)
-    \end{vmatrix}
-  } ~~~ \text{and} ~~~ u_2=\dfrac{
-    \begin{vmatrix}
-      m_1 ~ u_1 && m_1 ~ v_1
-      \\
-      m_1 ~ u_1 && 0
-    \end{vmatrix}
-  }{
-    \begin{vmatrix}
-      m_1 ~ u_1 && m_2 ~ cos(\theta_2)
-      \\
-      m_1 ~ u_1 && m_2 ~ sin(\theta_2)
-    \end{vmatrix}
-  }
+  \mathbf{K}=\dfrac{m_1 ~ v_1 +m_1 ~ u_1 ~ \dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}}{m_1 ~ u_1}
+  \Longrightarrow 
+  \mathbf{K} ~ u_1=v_1+u_1 ~ \dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}
+  \Longrightarrow
+  u_1 ~ \bigg(\mathbf{K}-\dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\bigg)=v_1
   \\
   \\
   \\
-  \\
-  \Longrightarrow \begin{cases}
-    cos(\theta_1)=\dfrac{m_1 ~ m_2 ~ v_1 ~ sin(\theta_2)-0}{m_1 ~ m_2 ~ u_1 ~ sin(\theta_2)-m_1 ~ m_2 ~ u_1 ~ cos(\theta_2)}
-    \\
-    \\
-    u_2=-\dfrac{m_1^2 ~ u_1 ~ v_1}{m_1 ~ m_2 ~ u_1 ~ sin(\theta_2)-m_1 ~ m_2 ~ u_1 ~ cos(\theta_2)}
-  \end{cases}
+  \mathbf{K}-\dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}=\dfrac{v_1}{u_1}
+  \Longrightarrow
+  \textcolor{red}{\mathbf{S}} ~ \mathbf{K}-\textcolor{red}{\mathbf{C}} ~ \mathbf{L}=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
   \\
   \\
   \\
   \therefore ~~~ \boxed{
-    \begin{cases}
-      cos(\theta_1)=\dfrac{v_1}{u_1} \dfrac{sin(\theta_2)}{\bigg(sin(\theta_2)-cos(\theta_2)\bigg)}
-      \\
-      \\
-      u_2=-\dfrac{m_1 ~ v_1}{m_2 \bigg(sin(\theta_2)-cos(\theta_2)\bigg)}
-    \end{cases}
+    (6): ~ \textcolor{red}{\mathbf{S}} ~ cos(\theta_1)- \textcolor{red}{\mathbf{C}} ~ sin(\theta_1)=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
   } ~~~~ \checkmark
 $
 
+\pagebreak
+
+In trigonometry we learned that 
+
 % Equations $(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ 
-% and $\theta_2$. We can find $u_2$, and $\theta_1$. Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ 
-% and $cos(\theta_2) \equiv \mathbf{C}$}. Rewritting equations $(6)$ and $(7)$ gives us: 
+% and $\theta_2$. We can find $u_2$, and $\theta_1$. Rewritting equations $(6)$ and $(7)$ gives us: 
 
 % \vspace{10px}
 
