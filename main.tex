@@ -673,156 +673,108 @@ $
 $
   \\
   \begin{cases}
-    m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
+    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_1
     \\
     \\
-    m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)=0
-    \\
-    \\
-    m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
+    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(-\theta_2)=0 \Longrightarrow u_2=\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ sin(-\theta_2)}
   \end{cases}
-  \\
-  \\
-  \\
-  $
-
-  Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ and $cos(\theta_2) \equiv \mathbf{C}$}. Knowing that 
-  $\theta_1 > 0$ and $\theta_2 < 0$ we can rewrite the above as:
-
-  $
-  \\
-  \\
-  \begin{cases}
-    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
-    \\
-    \\
-    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
-    \\
-    \\
-    (3): ~ m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
-  \end{cases}
-  \longrightarrow
-  \begin{cases}
-    (4): ~ m_1 ~ u_1 ~ \mathbf{K}+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
-    \\
-    \\
-    (5): ~  m_1 ~ u_1 ~ \mathbf{L}+m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=0
-  \end{cases}
-  \\
-  \\
-  \\
-  \longrightarrow
-  m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}=-m_1 ~ u_1 ~ \mathbf{L} 
-  \Longrightarrow 
-  u_2=-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{m_2 ~ \mathbf{S}}
   \\
   \\
 $
 
-Plugging in the above result into equation $(4)$ gives us:
+Plugging in $u_2$ into equation $(1)$ we get:
 
 \vspace{10px}
 
 $
   \\
-  m_1 ~ u_1 ~ \mathbf{K}+m_2 ~ \bigg(-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{m_2 ~ \mathbf{S}}\bigg) ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+  m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ \bigg(\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ sin(-\theta_2)}\bigg) ~ cos(\theta_2)=m_1 ~ v_1
+  \\
+  \\
+  \\
+  m_1 ~ u_1 ~ cos(\theta_1)+\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{sin(-\theta_2)}~ cos(\theta_2)=m_1 ~ v_1
+  \\
+  \\
+  \\
+  u_1 ~ cos(\theta_1)+\dfrac{u_1 ~ sin(\theta_1)}{sin(-\theta_2)}~ cos(\theta_2)=v_1
+  \\
+  \\
+  \\
+  u_1 ~ \left[cos(\theta_1)+\dfrac{sin(\theta_1) ~ cos(\theta_2)}{sin(-\theta_2)}\right]=v_1
+  \\
+  \\
+  \\
+  cos(\theta_1)+\dfrac{sin(\theta_1) ~ cos(\theta_2)}{sin(-\theta_2)}=\dfrac{v_1}{u_1}
   \Longrightarrow
-  m_1 ~ u_1 ~ \mathbf{K}-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{\mathbf{S}} ~ \textcolor{red}{\mathbf{C}}=m_1 ~ v_{1}
+  \dfrac{sin(-\theta_2) ~ cos(\theta_1)+cos(\theta_2) ~ sin(\theta_1)}{sin(-\theta_2)}=\dfrac{v_1}{u_1}
   \\
   \\
   \\
-  \mathbf{K}=\dfrac{m_1 ~ v_1 +m_1 ~ u_1 ~ \dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}}{m_1 ~ u_1}
-  \Longrightarrow 
-  \mathbf{K} ~ u_1=v_1+u_1 ~ \dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}
-  \Longrightarrow
-  u_1 ~ \bigg(\mathbf{K}-\dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\bigg)=v_1
-  \\
-  \\
-  \\
-  \mathbf{K}-\dfrac{\mathbf{L} ~ \textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}=\dfrac{v_1}{u_1}
-  \Longrightarrow
-  \textcolor{red}{\mathbf{S}} ~ \mathbf{K}-\textcolor{red}{\mathbf{C}} ~ \mathbf{L}=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
+  -sin(\theta_2) ~ cos(\theta_1)+cos(\theta_2) ~ sin(\theta_1)=-sin(\theta_2) \dfrac{v_1}{u_1}
   \\
   \\
   \\
   \therefore ~~~ \boxed{
-    (6): ~ \textcolor{red}{\mathbf{S}} ~ cos(\theta_1)- \textcolor{red}{\mathbf{C}} ~ sin(\theta_1)=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
+    (3): ~ sin(\theta_2) ~ cos(\theta_1)-cos(\theta_2) ~ sin(\theta_1)=sin(\theta_2) \dfrac{v_1}{u_1}
   } ~~~~ \checkmark
+  \\
+  \\
 $
+
+In trigonometry we learned that $\mathbf{A} ~ cos(\theta)-\mathbf{B} ~ sin(\theta)=\mathbf{C} \equiv \mathbf{R} ~ cos(\theta+\alpha)$ 
+where $\mathbf{R}=\sqrt{\mathbf{A}^2+\mathbf{B}^2}$ and $\alpha=tan^{-1} \left(\dfrac{\mathbf{B}}{\mathbf{A}}\right)$. So let's use this 
+identity to solve eqution $(3)$.
 
 \pagebreak
 
-In trigonometry we learned that $\mathbf{A} ~ sin(\theta)-\mathbf{B} ~ cos(\theta)=\mathbf{C} \equiv \mathbf{R} ~ sin(\theta-\alpha)$ 
-where $\mathbf{R}=\sqrt{\mathbf{A}^2+\mathbf{B}^2}$ and $\alpha=tan^{-1} \left(\dfrac{\mathbf{B}}{\mathbf{A}}\right)$. So let's use this 
-identity to solve eqution $(6)$.
-
 $
   \\
+  \begin{cases}
+    R=\sqrt{sin^2(\theta_2)+cos^2(\theta_2)}=1, ~~ \alpha=tan^{-1} \left(\dfrac{cos(\theta_2)}{sin(\theta_2)}\right)
+    \\
+    \\
+    sin(\theta_2) ~ cos(\theta_1)-cos(\theta_2) ~ sin(\theta_1)=\mathbf{R} ~ cos(\theta_1+\alpha)=sin(\theta_2) \dfrac{v_1}{u_1}
+  \end{cases}
   \\
-  \textcolor{red}{\mathbf{S}} ~ cos(\theta_1)- \textcolor{red}{\mathbf{C}} ~ sin(\theta_1)=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
+  \\
+  \\
+  \Longrightarrow cos(\theta_1+\alpha)=sin(\theta_2) \dfrac{v_1}{u_1}
+  \Longrightarrow \theta_1+\alpha=cos^{-1} \bigg(sin(\theta_2) \dfrac{v_1}{u_1}\bigg)
   \\
   \\
   \\
-  \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2} ~ sin \bigg(\theta_1-\alpha\bigg), ~~ \alpha=tan^{-1} \left(\dfrac{\textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\right)
-  \\
-  \\
-  \\
-  \therefore ~~~ \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2} ~ sin \bigg(\theta_1-\alpha\bigg)=\textcolor{red}{\mathbf{S}} \dfrac{v_1}{u_1}
+  \therefore ~ \theta_1=cos^{-1} \bigg(sin(\theta_2) \dfrac{v_1}{u_1}\bigg)-\alpha
+  =cos^{-1} \bigg(sin(\theta_2) \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)
   \\
   \\
   \\
   \therefore ~~~ \boxed{
-    (7): ~ \theta_1=sin^{-1} \bigg(\dfrac{
-      \textcolor{red}{\mathbf{S}} ~ v_1
-    }{
-      u_1 ~ \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2}
-    }\bigg)+tan^{-1} \left(\dfrac{\textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\right)
+    (4): ~ \theta_1=cos^{-1} \bigg(sin(\theta_2) ~ \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)
   } ~~~~ \checkmark
   \\
   \\
 $
 
-Earlier we found $u_2$ and in order to find its value we needed the value of $\theta_1$. Now by knowing $\theta_1$ we can compute $u_2$.
+Earlier we found $u_2$ and in order to find its value we needed the value of $\theta_1$. Now by knowing $\theta_1$ we can compute $u_2$. Equations 
+$(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ and $\theta_2$. We can find $u_2$, 
+and $\theta_1$.
 
 \vspace{10px}
 
 $
   \\
-  u_2=-\dfrac{m_1 ~ u_1 ~ \mathbf{L}}{m_2 ~ \mathbf{S}}
-  =-\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ \mathbf{S}}
+  u_2=\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ sin(-\theta_2)}
+  =\dfrac{m_1 ~ u_1}{m_2 ~ sin(-\theta_2)} sin \bigg[ 
+    cos^{-1} \bigg(sin(\theta_2) ~ \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)  
+  \bigg]
   \\
   \\
   \\
   \therefore ~~~ \boxed{
-    (8): ~ u_2=-\dfrac{m_1 ~ u_1}{m_2 ~ \mathbf{S}} ~ 
-    sin \bigg[ 
-      sin^{-1} \bigg(\dfrac{
-      \textcolor{red}{\mathbf{S}} ~ v_1
-      }{
-        u_1 ~ \sqrt{\textcolor{red}{\mathbf{S}}^2+\textcolor{red}{\mathbf{C}}^2}
-      }\bigg)+tan^{-1} \left(\dfrac{\textcolor{red}{\mathbf{C}}}{\textcolor{red}{\mathbf{S}}}\right)
+    (5): ~ u_2=\dfrac{m_1 ~ u_1}{m_2 ~ sin(-\theta_2)} sin \bigg[ 
+      cos^{-1} \bigg(sin(\theta_2) ~ \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)  
     \bigg]
   } ~~~~ \checkmark
 $
-
-
-
-% Equations $(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ 
-% and $\theta_2$. We can find $u_2$, and $\theta_1$. Rewritting equations $(6)$ and $(7)$ gives us: 
-
-% \vspace{10px}
-
-% $
-%   \\
-%   result
-% $
-
-
-% \pagebreak
-
-% The kinetic energy of the second ball after the collision is $K.E_2=\dfrac{1}{2} m_2 ~ u^2_2$ which is at max when $u_2$ is
-% at its maximum based on the angle the second ball is scattered. Now that we have $\dfrac{d u_2}{d\theta_2}$ by equating it
-% to zero, we can find the $\theta_2$ at which $u_2$ is maximum, therefore $K.E_2$ is at its highest.
-
 
 \end{document}
