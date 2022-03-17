@@ -777,4 +777,122 @@ $
   } ~~~~ \checkmark
 $
 
+\pagebreak
+
+\textbf{Non-head-on elastic collision of balls with different masses (3)}
+
+\textbf{(Using reference frame of the Center of Mass)}
+
+\vspace{10px}
+
+An object's \emph{center of mass} can be thought of as the point where the total mass of an object or a 
+system is treated as a point mass. The center of mass of a system of particles is a specific point at 
+which the system's mass behaves as if it were concentrated. 
+
+Another way of expressing the \emph{center of mass} is a point where if whole of the mass of the body gets concentrated, 
+and then the body is balanced at this point then it experiences no net torque and will remain in static equilibrium.
+
+$$
+  x_{cm}=\dfrac{
+    \sum\limits_{i=1}^{n} ~ m_i ~ r_i
+  }{
+    \sum\limits_{i=1}^{n} ~ m_i
+  } ~~~~~~~~~~~~
+  v_{cm}=\dfrac{
+    \sum\limits_{i=1}^{n} ~ p_i
+  }{
+    \sum\limits_{i=1}^{n} ~ m_i
+  }
+$$
+
+A quick description of what the laboratory frame and center of mass references are. The \emph{laboratory frame} is a frame 
+whereby positions and velocities are measured with respect to the laboratory and the \emph{center of mass} frame is a frame 
+whereby the positions and velocities are measured with respect to the the center of mass of a system. Basically, we need 
+to change to a moving coordinate system which goes with the velocity of the center of mass.\textbf{ The total momentum 
+is always zero in the center of mass reference frame}.
+
+\begin{center}
+  \includegraphics[height=10cm, width=9cm]{3.JPG}
+\end{center}
+
+In center of mass frame
+
+$
+  \\
+  \begin{cases}
+    x_{cm}=\dfrac{
+      \sum\limits_{i=1}^{n} ~ m_i ~ r_i
+    }{
+      \sum\limits_{i=1}^{n} ~ m_i
+    }=\dfrac{m_1 ~ x_1+m_2 ~ x_2}{m_1+m_2} ~ \hat{x}
+    \\
+    \\
+    \\
+    v_{cm}=\dfrac{
+      \sum\limits_{i=1}^{n} ~ p_i
+    }{
+      \sum\limits_{i=1}^{n} ~ m_i
+    }=\dfrac{m_1 ~ v_1+m_2 ~ v_2}{m_1+m_2}=\dfrac{m_1 ~ v_1}{m_1+m_2} ~ \hat{x}
+  \end{cases}
+$
+
+\begin{center}
+  \includegraphics[height=7cm, width=9cm]{4.JPG}
+\end{center}
+
+$
+  \begin{cases}
+    \sum\limits ~ P_{Total}=0 \Longleftrightarrow \overrightarrow{P_1}+\overrightarrow{P_2}=\overrightarrow{Q_1}+\overrightarrow{Q_2}=0
+    \\
+    \\
+    \dfrac{\bigg|\overrightarrow{P_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{P_2}\bigg|^2}{2m_2}
+    =\dfrac{\bigg|\overrightarrow{Q_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{Q_2}\bigg|^2}{2m_2}
+  \end{cases}
+  \\
+  \\
+  \\
+  \\
+  \therefore ~~~ \dfrac{\bigg|\overrightarrow{P_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{-P_1}\bigg|^2}{2m_2}
+  =\dfrac{\bigg|\overrightarrow{Q_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{-Q_1}\bigg|^2}{2m_2}
+  \Longrightarrow
+  \bigg|\overrightarrow{P_1}\bigg|^2 \bigg(\dfrac{1}{2m_1}+\dfrac{1}{2m_2} \bigg)
+  =\bigg|\overrightarrow{Q_1}\bigg|^2 \bigg(\dfrac{1}{2m_1}+\dfrac{1}{2m_2} \bigg)
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \bigg|\overrightarrow{P_1}\bigg|
+    =\bigg|\overrightarrow{P_2}\bigg|
+    =\bigg|\overrightarrow{Q_1}\bigg|
+    =\bigg|\overrightarrow{Q_2}\bigg|
+  } ~~~~ \checkmark
+$
+
+\begin{center}
+  \includegraphics[height=7cm, width=9cm]{5.JPG}
+\end{center}
+
+$
+  \\
+  P=m_1 ~ V_1
+  \\
+  \\
+  V_1=v_1-v_{cm}=v_1-\dfrac{m_1 ~ v_1}{m_1+m_2}
+  =\dfrac{v_1 ~ m_1+v_1 ~ m_2-m_1 ~ v_1}{m_1+m_2}
+  \\
+  \\
+  \\
+  \therefore ~~~ V_1=\dfrac{v_1 ~ m_2}{m_1+m_2} ~~~~ \checkmark
+  \\
+  \\
+  \\
+  \therefore ~~~ P=m_1 \times \dfrac{v_1 ~ m_2}{m_1+m_2}, ~~~~~~ \mu \equiv \dfrac{m_1}{m_1+m_2}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    P=\mu ~ v_1
+  } ~~~~ \checkmark
+$
+
 \end{document}
