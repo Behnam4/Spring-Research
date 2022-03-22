@@ -668,370 +668,340 @@ $
   \dfrac{1}{2} m_1 ~ v^2_1+0=\dfrac{1}{2} m_1 ~ u^2_1+\dfrac{1}{2} m_2 ~ u^2_2
 $
 
-\vspace{10px}
+\pagebreak
 
-Assuming we are given $m_1, m_2, v_1,$ and $\theta_2$. We can find $u_1, ~ u_2$, and $\theta_1$. 
-Let's define \textcolor{red}{$sin(\theta_2) \equiv \mathbf{S}$ and $cos(\theta_2) \equiv \mathbf{C}$}.
+$
+  \\
+  \begin{cases}
+    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_1
+    \\
+    \\
+    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(-\theta_2)=0 \Longrightarrow u_2=\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ sin(-\theta_2)}
+  \end{cases}
+  \\
+  \\
+$
+
+Plugging in $u_2$ into equation $(1)$ we get:
 
 \vspace{10px}
 
 $
+  \\
+  m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ \bigg(\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ sin(-\theta_2)}\bigg) ~ cos(\theta_2)=m_1 ~ v_1
+  \\
+  \\
+  \\
+  m_1 ~ u_1 ~ cos(\theta_1)+\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{sin(-\theta_2)}~ cos(\theta_2)=m_1 ~ v_1
+  \\
+  \\
+  \\
+  u_1 ~ cos(\theta_1)+\dfrac{u_1 ~ sin(\theta_1)}{sin(-\theta_2)}~ cos(\theta_2)=v_1
+  \\
+  \\
+  \\
+  u_1 ~ \left[cos(\theta_1)+\dfrac{sin(\theta_1) ~ cos(\theta_2)}{sin(-\theta_2)}\right]=v_1
+  \\
+  \\
+  \\
+  cos(\theta_1)+\dfrac{sin(\theta_1) ~ cos(\theta_2)}{sin(-\theta_2)}=\dfrac{v_1}{u_1}
+  \Longrightarrow
+  \dfrac{sin(-\theta_2) ~ cos(\theta_1)+cos(\theta_2) ~ sin(\theta_1)}{sin(-\theta_2)}=\dfrac{v_1}{u_1}
+  \\
+  \\
+  \\
+  -sin(\theta_2) ~ cos(\theta_1)+cos(\theta_2) ~ sin(\theta_1)=-sin(\theta_2) \dfrac{v_1}{u_1}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    (3): ~ sin(\theta_2) ~ cos(\theta_1)-cos(\theta_2) ~ sin(\theta_1)=sin(\theta_2) \dfrac{v_1}{u_1}
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+In trigonometry we learned that $\mathbf{A} ~ cos(\theta)-\mathbf{B} ~ sin(\theta)=\mathbf{C} \equiv \mathbf{R} ~ cos(\theta+\alpha)$ 
+where $\mathbf{R}=\sqrt{\mathbf{A}^2+\mathbf{B}^2}$ and $\alpha=tan^{-1} \left(\dfrac{\mathbf{B}}{\mathbf{A}}\right)$. So let's use this 
+identity to solve eqution $(3)$.
+
+\pagebreak
+
+$
+  \\
   \begin{cases}
-    (1): ~ m_1 ~ u_1 ~ cos(\theta_1)+m_2 ~ u_2 ~ cos(\theta_2)=m_1 ~ v_{1}
+    R=\sqrt{sin^2(\theta_2)+cos^2(\theta_2)}=1, ~~ \alpha=tan^{-1} \left(\dfrac{cos(\theta_2)}{sin(\theta_2)}\right)
     \\
     \\
-    (2): ~ m_1 ~ u_1 ~ sin(\theta_1)-m_2 ~ u_2 ~ sin(\theta_2)=0
-    \\
-    \\
-    (3): ~ m_1 ~ v^2_1=m_1 ~ u^2_1+m_2 ~ u^2_2 
+    sin(\theta_2) ~ cos(\theta_1)-cos(\theta_2) ~ sin(\theta_1)=\mathbf{R} ~ cos(\theta_1+\alpha)=sin(\theta_2) \dfrac{v_1}{u_1}
   \end{cases}
   \\
   \\
   \\
-  \text{From} ~ (3) ~~ \therefore ~~~ \boxed{
+  \Longrightarrow cos(\theta_1+\alpha)=sin(\theta_2) \dfrac{v_1}{u_1}
+  \Longrightarrow \theta_1+\alpha=cos^{-1} \bigg(sin(\theta_2) \dfrac{v_1}{u_1}\bigg)
+  \\
+  \\
+  \\
+  \therefore ~ \theta_1=cos^{-1} \bigg(sin(\theta_2) \dfrac{v_1}{u_1}\bigg)-\alpha
+  =cos^{-1} \bigg(sin(\theta_2) \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    (4): ~ \theta_1=cos^{-1} \bigg(sin(\theta_2) ~ \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+Earlier we found $u_2$ and in order to find its value we needed the value of $\theta_1$. Now by knowing $\theta_1$ we can compute $u_2$. Equations 
+$(1)$ and $(2)$ \emph{can be only used to find two unknowns}, so assuming we are given $m_1, m_2, v_1, u_1$ and $\theta_2$. We can find $u_2$, 
+and $\theta_1$.
+
+\vspace{10px}
+
+$
+  \\
+  u_2=\dfrac{m_1 ~ u_1 ~ sin(\theta_1)}{m_2 ~ sin(-\theta_2)}
+  =\dfrac{m_1 ~ u_1}{m_2 ~ sin(-\theta_2)} sin \bigg[ 
+    cos^{-1} \bigg(sin(\theta_2) ~ \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)  
+  \bigg]
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    (5): ~ u_2=\dfrac{m_1 ~ u_1}{m_2 ~ sin(-\theta_2)} sin \bigg[ 
+      cos^{-1} \bigg(sin(\theta_2) ~ \dfrac{v_1}{u_1}\bigg)-tan^{-1} \bigg(\dfrac{cos(\theta_2)}{sin(\theta_2)}\bigg)  
+    \bigg]
+  } ~~~~ \checkmark
+$
+
+\pagebreak
+
+\textbf{Non-head-on elastic collision of balls with different masses (3)}
+
+\textbf{(Using reference frame of the Center of Mass)}
+
+\vspace{10px}
+
+An object's \emph{center of mass} can be thought of as the point where the total mass of an object or a 
+system is treated as a point mass. The center of mass of a system of particles is a specific point at 
+which the system's mass behaves as if it were concentrated. 
+
+Another way of expressing the \emph{center of mass} is a point where if whole of the mass of the body gets concentrated, 
+and then the body is balanced at this point then it experiences no net torque and will remain in static equilibrium.
+
+$$
+  x_{cm}=\dfrac{
+    \sum\limits_{i=1}^{n} ~ m_i ~ r_i
+  }{
+    \sum\limits_{i=1}^{n} ~ m_i
+  } ~~~~~~~~~~~~
+  v_{cm}=\dfrac{
+    \sum\limits_{i=1}^{n} ~ p_i
+  }{
+    \sum\limits_{i=1}^{n} ~ m_i
+  }
+$$
+
+A quick description of what the laboratory frame and center of mass references are. The \emph{laboratory frame} is a frame 
+whereby positions and velocities are measured with respect to the laboratory and the \emph{center of mass} frame is a frame 
+whereby the positions and velocities are measured with respect to the the center of mass of a system. Basically, we need 
+to change to a moving coordinate system which goes with the velocity of the center of mass.\textbf{ The total momentum 
+is always zero in the center of mass reference frame}.
+
+\begin{center}
+  \includegraphics[height=10cm, width=9cm]{3.JPG}
+\end{center}
+
+In center of mass frame
+
+$
+  \\
+  \begin{cases}
+    x_{cm}=\dfrac{
+      \sum\limits_{i=1}^{n} ~ m_i ~ r_i
+    }{
+      \sum\limits_{i=1}^{n} ~ m_i
+    }=\dfrac{m_1 ~ x_1+m_2 ~ x_2}{m_1+m_2} ~ \hat{x}
+    \\
+    \\
+    \\
+    v_{cm}=\dfrac{
+      \sum\limits_{i=1}^{n} ~ p_i
+    }{
+      \sum\limits_{i=1}^{n} ~ m_i
+    }=\dfrac{m_1 ~ v_1+m_2 ~ v_2}{m_1+m_2}=\dfrac{m_1 ~ v_1}{m_1+m_2} ~ \hat{x}
+  \end{cases}
+$
+
+\begin{center}
+  \includegraphics[height=7cm, width=9cm]{4.JPG}
+\end{center}
+
+$
+  \begin{cases}
+    \sum\limits ~ P_{Total}=0 \Longleftrightarrow \overrightarrow{P_1}+\overrightarrow{P_2}=\overrightarrow{Q_1}+\overrightarrow{Q_2}=0
+    \\
+    \\
+    \dfrac{\bigg|\overrightarrow{P_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{P_2}\bigg|^2}{2m_2}
+    =\dfrac{\bigg|\overrightarrow{Q_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{Q_2}\bigg|^2}{2m_2}
+  \end{cases}
+  \\
+  \\
+  \\
+  \\
+  \therefore ~~~ \dfrac{\bigg|\overrightarrow{P_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{-P_1}\bigg|^2}{2m_2}
+  =\dfrac{\bigg|\overrightarrow{Q_1}\bigg|^2}{2m_1}+\dfrac{\bigg|\overrightarrow{-Q_1}\bigg|^2}{2m_2}
+  \Longrightarrow
+  \bigg|\overrightarrow{P_1}\bigg|^2 \bigg(\dfrac{1}{2m_1}+\dfrac{1}{2m_2} \bigg)
+  =\bigg|\overrightarrow{Q_1}\bigg|^2 \bigg(\dfrac{1}{2m_1}+\dfrac{1}{2m_2} \bigg)
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \bigg|\overrightarrow{P_1}\bigg|
+    =\bigg|\overrightarrow{P_2}\bigg|
+    =\bigg|\overrightarrow{Q_1}\bigg|
+    =\bigg|\overrightarrow{Q_2}\bigg|
+  } ~~~~ \checkmark
+$
+
+\begin{center}
+  \includegraphics[height=7cm, width=9cm]{5.JPG}
+\end{center}
+
+$
+  \\
+  P=m_1 ~ V_1
+  \\
+  \\
+  V_1=v_1-v_{cm}=v_1-\dfrac{m_1 ~ v_1}{m_1+m_2}
+  =\dfrac{v_1 ~ m_1+v_1 ~ m_2-m_1 ~ v_1}{m_1+m_2}
+  \\
+  \\
+  \\
+  \therefore ~~~ V_1=\dfrac{v_1 ~ m_2}{m_1+m_2} ~~~~ \checkmark
+  \\
+  \\
+  \\
+  \therefore ~~~ P=m_1 \times \dfrac{v_1 ~ m_2}{m_1+m_2}, ~~~~~~ \mu \equiv \dfrac{m_1}{m_1+m_2}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    P=\mu ~ v_1
+  } ~~~~ \checkmark
+$
+
+\pagebreak
+
+Velocities in the Center of Mass frame
+
+\begin{center}
+  \includegraphics[height=7cm, width=9cm]{6.JPG}
+\end{center}
+
+$
+  \\
+  \begin{cases}
+    \overrightarrow{V_1}=\dfrac{1}{m_1} \bigg( P,0 \bigg)
+    \\
+    \\
+    \overrightarrow{V_2}=\dfrac{1}{m_2} \bigg( -P,0 \bigg)
+  \end{cases}, ~~~~~~~
+  \begin{cases}
+    \overrightarrow{U_1}=\dfrac{P}{m_1} \bigg( cos \theta, sin \theta \bigg)
+    \\
+    \\
+    \overrightarrow{U_2}=-\dfrac{P}{m_2} \bigg( cos \theta, sin \theta \bigg)
+  \end{cases}
+  \\
+  \\
+$
+
+Convert back to the Lab frame
+
+\vspace{10px}
+
+$
+  \\
+  \overrightarrow{u_1}=\overrightarrow{U_1}+\overrightarrow{v_{cm}}
+  =\dfrac{P}{m_1} \bigg( cos \theta, sin \theta \bigg)+ \bigg( \dfrac{m_1 ~ v_1}{m_1+m_2}, 0\bigg)
+  =\dfrac{m_1 ~ m_2 ~ v_1}{m_1+m_2} \dfrac{1}{m_1} \bigg( cos \theta, sin \theta \bigg)
+  +\bigg( \dfrac{m_1 ~ v_1}{m_1+m_2}, 0\bigg)
+  \\
+  \\
+  \boxed{\eta \equiv \dfrac{m_1}{m_2} }
+  \Longrightarrow \overrightarrow{u_1}=v_1 ~ \left[
+    \dfrac{1}{1+\eta} cos \theta+\dfrac{\eta}{\eta+1}, \dfrac{1}{\eta+1} sin \theta
+  \right]
+  \\
+  \\
+  \\
+  \therefore ~~~ \overrightarrow{u_1}=\dfrac{v_1}{1+\eta} \bigg( cos \theta+\eta, sin \theta \bigg)
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \overrightarrow{u_2}=\overrightarrow{U_2}+\overrightarrow{v_{cm}}
+  =-\dfrac{P}{m_2} ~ \bigg( cos \theta, sin \theta \bigg)+ \bigg( \dfrac{m_1 ~ v_1}{m_1+m_2}, 0\bigg)
+  \\
+  \\
+  =-\dfrac{1}{m_2} \dfrac{m_1 ~ m_2}{m_1+m_2} ~ v_1 \bigg( cos \theta, sin \theta \bigg)+ \bigg( \dfrac{m_1 ~ v_1}{m_1+m_2}, 0\bigg)
+  =-\dfrac{\eta}{1+\eta} v_1 \bigg( cos \theta, sin \theta \bigg)+\dfrac{\eta}{1+\eta}  \bigg( 1, 0 \bigg)
+  \\
+  \\
+  =\dfrac{\eta}{1+\eta} v_1 \left[
+    \bigg( -cos \theta+1, -sin \theta \bigg)
+  \right]
+  \\
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
     \begin{cases}
-      (4): ~ u^2_1=v^2_1-\dfrac{m_2}{m_1} ~ u^2_2
+      \overrightarrow{u_1}=\dfrac{v_1}{1+\eta} \bigg( cos \theta+\eta, sin \theta \bigg)
       \\
       \\
-      (5): ~ v^2_1=u^2_1+\dfrac{m_2}{m_1} ~ u^2_2
+      \overrightarrow{u_2}=\dfrac{v_1}{1+\eta} \bigg( -\eta cos \theta+\eta , -\eta sin \theta \bigg)
     \end{cases}
   } ~~~~ \checkmark
-  \\
-  \\
-  \\
-$
-
-Squaring and summing $(1)$ and $(2)$ gives us:
-
-\vspace{10px}
-
-$
-  \begin{cases}
-    m^2_1 ~ u^2_1 ~ cos^2(\theta_1)+m^2_2 ~ u^2_2 ~ cos^2(\theta_2)+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ cos(\theta_1) ~ cos(\theta_2)=m^2_1 ~ v^2_{1}
-    \\
-    \\
-    m^2_1 ~ u^2_1 ~ sin^2(\theta_1)+m^2_2 ~ u^2_2 ~ sin^2(\theta_2)-2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ sin(\theta_1) ~ sin(\theta_2)=0
-  \end{cases}
-  \\
-  \\
-  \rule{13cm}{1pt}
-  \\
-  \\
-  m^2_1 ~ u^2_1 \left[cos^2(\theta_1)+sin^2(\theta_1)\right]
-  +m^2_2 ~ u^2_2 \left[cos^2(\theta_2)+sin^2(\theta_2)\right]
-  \\
-  \\
-  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-  =m^2_1 ~ v^2_{1}
-  \\
-  \\
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2 
-  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-  =m^2_1 ~ v^2_{1}
-  \\
-  \\
-$
-
-Let's define \textcolor{red}{$cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2) \equiv ~ \mathbf{K}$}
-and from $(5)$ we have the following.
-
-\vspace{10px}
-
-$
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2 
-  +2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}
-  =m^2_1 ~ v^2_{1}
-  \\
-  \\
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m^2_1 \left[u^2_1+\dfrac{m_2}{m_1} ~ u^2_2\right]
-  \\
-  \\
-  \\
-  m^2_1 ~ u^2_1+m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m^2_1 ~ u^2_1+m_1 ~ m_2 ~ u^2_2
-  \\
-  \\
-  \\
-  m^2_2 ~ u^2_2+2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=m_1 ~ m_2 ~ u^2_2
-  \\
-  \\
-  \\
-  2 m_1 ~ m_2 ~ u_1 ~ u_2 ~ \textcolor{red}{\mathbf{K}}=u^2_2 \left[m_1 ~ m_2-m^2_2\right]
-  \\
-  \\
-  \\
-  2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}=u_2 \left[m_1 ~ m_2-m^2_2\right]
-  \\
-  \\
-  \\
-  u_2=\dfrac{2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1 ~ m_2-m^2_2}
-  =\dfrac{2 m_1 ~ m_2 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_2 \left(m_1-m_2\right)}
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    (6): ~ u_2=\dfrac{2m_1 ~ u_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2}
-  } ~~~~ \checkmark
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    (7): ~ \dfrac{u_2}{u_1}=\dfrac{2m_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2}
-  }
-  \\
-  \\
-  \\
-  \text{Squaring $(6)$ and plugging in $(4)$}
-  \\
-  \\
-  \\
-  \left(\dfrac{u_2}{u_1}\right)^2=\dfrac{\left(2m_1 ~ \textcolor{red}{\mathbf{K}}\right)^2}{\left(m_1-m_2\right)^2}
-  \\
-  \\
-  \\
-  u^2_2 ~ \left(m_1-m_2\right)^2=4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ u_1
-  =4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ \left(v^2_1-\dfrac{m_2}{m_1} ~ u^2_2\right)
-  \\
-  \\
-  \\
-  u^2_2 ~ \left(m_1-m_2\right)^2
-  =4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1-4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2} ~ u^2_2
-  \\
-  \\
-  \\
-  u^2_2 \left[\left(m_1-m_2\right)^2+4m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2} \right]=4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1
-  \\
-  \\
-  \\
-  u^2_2=\dfrac{4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1}{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
-  \\
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    u_2=\dfrac{
-      2 m_1 ~ v_1 ~ \textcolor{red}{\mathbf{K}}
-    }{
-      \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
-    }
-  } ~~~~ \checkmark
 $
 
 \pagebreak
 
-From equation $(4)$ we have:
+\begin{center}
+  \includegraphics[height=18cm, width=18cm]{7.JPG}
+\end{center}
 
-\vspace{10px}
-
-$
-  \\
-  u^2_1=v^2_1-\dfrac{m_2}{m_1} ~ u^2_2
-  =v^2_1-\dfrac{m_2}{m_1} ~ \dfrac{4 m^2_1 ~ \textcolor{red}{\mathbf{K}^2} ~ v^2_1}{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
-  \\
-  \\
-  \\
-  u^2_1=v^2_1-\dfrac{4 m_1 ~ m_2 ~ v^2_1 ~ \textcolor{red}{\mathbf{K}^2}}{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
-  \\
-  \\
-  \\
-  u^2_1=v^2_1 \left[1-\dfrac{4 ~ m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}\right]
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    u_1=v_1 \sqrt{
-      \left[1-\dfrac{4 ~ m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}\right]
-    }
-  } ~~~~ \checkmark
-  \\
-  \\
-  \\
-  \\
-  \\
-  \text{From equation $(2)$}
-  \\
-  \\
-  m_1 ~ u_1 sin(\theta_1)=m_2 ~ u_2 ~ sin(\theta_2)=m_2 ~ u_2 ~ \textcolor{red}{\mathbf{S}}
-  \\
-  \\
-  \\
-  sin(\theta_1)=\dfrac{m_2}{m_1} \dfrac{u_2}{u_1} ~ \textcolor{red}{\mathbf{S}}
-  \\
-  \\
-  \\
-  \text{from $(7)$ we have the value of $\dfrac{u_2}{u_1}$, therefore}
-  \\
-  \\
-  sin(\theta_1)=\dfrac{m_2}{m_1} ~ \dfrac{2m_1 ~ \textcolor{red}{\mathbf{K}}}{m_1-m_2} ~ \textcolor{red}{\mathbf{S}}
-  =\dfrac{2m_2 ~ \textcolor{red}{\mathbf{K}} ~ \textcolor{red}{\mathbf{S}}}{m_1-m_2}
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    \theta_1=sin^{-1} \left(
-      \dfrac{2m_2 ~ \textcolor{red}{\mathbf{K}} ~ \textcolor{red}{\mathbf{S}}}{m_1-m_2}
-    \right)
-  } ~~~~ \checkmark
-$
-  
 \pagebreak
 
-$
-  \\
-  u_2=\dfrac{
-    2 m_1 ~ v_1 ~ \textcolor{red}{\mathbf{K}}
-  }{
-    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \textcolor{red}{\mathbf{K}^2}}
-  }
-  =\dfrac{
-    2 m_1 ~ v_1 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-  }{
-    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]^2}
-  }
-  \\
-  \\
-  \\
-  \begin{cases}
-    f=2 m_1 ~ v_1 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-    \\
-    \\
-    \\
-    g=\sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]^2}
-    \\
-    \\
-    \\
-    \dfrac{df}{d\theta_2}=-2m_1 ~ v_1 \left[cos(\theta_1) ~ sin(\theta_2)+sin(\theta_1) ~ cos(\theta_2)\right]
-    \\
-    \\
-    \\
-    \dfrac{dg}{d\theta_2}=-\dfrac{
-      4m_1 ~ m_2 \left[cos(\theta_1) ~ sin(\theta_2)+sin(\theta_1) ~ cos(\theta_2)\right] \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]
-    }{
-      \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ \left[cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)\right]^2}
-    }
-  \end{cases}
-  \\
-  \\
-  \text{Trig angle identities:}
-  \\
-  \\
-  \begin{cases}
-    sin(\theta_1+\theta_2)=sin(\theta_1) ~ cos(\theta_2)+cos(\theta_1) ~ sin(\theta_2)
-    \\
-    \\
-    sin(\theta_1-\theta_2)=sin(\theta_1) ~ cos(\theta_2)-cos(\theta_1) ~ sin(\theta_2)
-    \\
-    \\
-    cos(\theta_1+\theta_2)=cos(\theta_1) ~ cos(\theta_2)-sin(\theta_1) ~ sin(\theta_2)
-    \\
-    \\
-    cos(\theta_1-\theta_2)=cos(\theta_1) ~ cos(\theta_2)+sin(\theta_1) ~ sin(\theta_2)
-  \end{cases}
-  \\
-  \\
-  \\
-  \therefore ~~~ \begin{cases}
-    f=2 m_1 ~ v_1 ~ cos(\theta_1+\theta_2)
-    \\
-    \\
-    \\
-    g=\sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
-    \\
-    \\
-    \\
-    \dfrac{df}{d\theta_2}=-2m_1 ~ v_1 ~ sin(\theta_1+\theta_2)
-    \\
-    \\
-    \\
-    \dfrac{dg}{d\theta_2}=-\dfrac{
-      4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
-    }{
-      \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
-    }
-  \end{cases}
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    u_2=\dfrac{f}{g}, ~~~ \dfrac{d u_2}{d\theta_2}=\dfrac{\dfrac{df}{d\theta_2} ~ g-f ~ \dfrac{dg}{d\theta_2}}{g^2}
-  }
-  \\
-  \\
-  \\
-  \\
-  \textbf{Numerator}: 
-  \\
-  \\
-  -2m_1 ~ v_1 ~ sin(\theta_1+\theta_2) ~ \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
-  -2 m_1 ~ v_1 ~ cos(\theta_1+\theta_2) ~ -\dfrac{
-    4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
-  }{
-    \sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)}
-  }
-  \\
-  \\
-  \text{If} ~ \textcolor{red}{\sqrt{\left(m_1-m_2\right)^2+4 m_1 ~ m_2 ~ cos^2(\theta_1+\theta_2)} \equiv ~ \mathbf{W}} ~ \text{then}
-  \\
-  \\
-  =-2m_1 ~ v_1 ~ sin(\theta_1+\theta_2) ~ \textcolor{red}{\mathbf{W}}
-  -2 m_1 ~ v_1 ~ cos(\theta_1+\theta_2) ~ -\dfrac{
-    4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
-  }{
-    \textcolor{red}{\mathbf{W}}
-  }
-  \\
-  \\
-  =-2m_1 ~ v_1 \left[sin(\theta_1+\theta_2) ~ \textcolor{red}{\mathbf{W}}+ cos(\theta_1+\theta_2)\right]
-  -\dfrac{4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)}{\textcolor{red}{\mathbf{W}}}
-  \\
-  \\
-  \\
-  \rule{18cm}{1pt}
-  \\
-  \\
-  \dfrac{d u_2}{d\theta_2}=\dfrac{
-    -2m_1 ~ v_1 \left[sin(\theta_1+\theta_2) ~ \textcolor{red}{\mathbf{W}}+ cos(\theta_1+\theta_2)\right]
-    -\dfrac{4m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)}{\textcolor{red}{\mathbf{W}}}
-  }{
-    \textcolor{red}{\mathbf{W}}
-  }
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    \dfrac{d u_2}{d\theta_2}=\dfrac{
-      -2m_1 ~ v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
-      -4 m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
-    }{
-      \textcolor{red}{\mathbf{W}}^2
-    }
-  } ~~~~ \checkmark
-$
+\begin{center}
+  \includegraphics[height=18.5cm, width=18cm]{8.JPG}
+\end{center}
 
-\vspace{10px}
+\pagebreak
 
-The kinetic energy of the second ball after the collision is $K.E_2=\dfrac{1}{2} m_2 ~ u^2_2$ which is at max when $u_2$ is
-at its maximum based on the angle the second ball is scattered. Now that we have $\dfrac{d u_2}{d\theta_2}$ by equating it
-to zero, we can find the $\theta_2$ at which $u_2$ is maximum, therefore $K.E_2$ is at its highest.
+\begin{center}
+  \includegraphics[height=18.5cm, width=18cm]{9.JPG}
+\end{center}
 
-\vspace{10px}
+\pagebreak
 
-$
-  \\
-  \dfrac{d u_2}{d\theta_2}=0 \Longrightarrow -2m_1 ~ v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
-  -4 m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)=0
-  \\
-  \\
-  \\
-  -2m_1 ~ v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
-  =4 m_1 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
-  \\
-  \\
-  \\
-  -v_1 ~ \textcolor{red}{\mathbf{W}} \left[\textcolor{red}{\mathbf{W}} sin(\theta_1+\theta_2)+cos(\theta_1+\theta_2)\right]
-  =4 ~ m_2 ~ sin(\theta_1+\theta_2) ~ cos(\theta_1+\theta_2)
-$
+\begin{center}
+  \includegraphics[height=18.5cm, width=18cm]{10.JPG}
+\end{center}
+
+\pagebreak
+
+\begin{center}
+  \includegraphics[height=18.5cm, width=18cm]{11.JPG}
+\end{center}
+
+\pagebreak
 
 \end{document}
