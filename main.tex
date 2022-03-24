@@ -1087,7 +1087,7 @@ energy and momentum take the new forms $E=\gamma ~ mc^2$ and $\overrightarrow{p}
 \end{center}
 
 \begin{center}
-  \includegraphics[height=10cm, width=14cm]{13.JPG}
+  \includegraphics[height=12cm, width=14cm]{13.JPG}
 \end{center}
 
 In center of mass frame
@@ -1110,5 +1110,100 @@ $
     }=\dfrac{m_1 ~ v_1+m_2 ~ v_2}{m_1+m_2}=\dfrac{m_1 ~ v_1}{m_1+m_2} ~ \hat{x}
   \end{cases}
 $
+
+\textbf{Relativistic Momentum}
+
+\vspace{10px}
+
+Relativistic momentum $\overrightarrow{p}$ is classical momentum multiplied by the relativistic factor 
+$\gamma$, so it is $\overrightarrow{p}=\gamma ~ m \overrightarrow{v}=\dfrac{m \overrightarrow{v}}{\sqrt{1-\dfrac{v^2}{c^2}}}$
+where p denotes momentum of any particle with mass, v denotes velocity, and c is the speed of light.
+
+\vspace{20px}
+
+\textbf{Relativistic Energy}
+
+\vspace{10px}
+
+$
+  W=KE=\bigints F.ds=\bigints \dfrac{d}{dt} \bigg( \gamma m v \bigg) ~ ds, ~~~ ds=v ~ dt
+  \\
+  \\
+  \\
+  KE=\bigints \dfrac{d}{dt} \bigg( \gamma m v \bigg) ~ v dt=m \bigints dt \dfrac{d}{dt} \bigg( \gamma v \bigg) v
+  =\bigints\limits_{0}^{ \gamma V} ~ v d\bigg( \gamma v\bigg)
+  =\gamma m V^2-m \bigints\limits_{0}^{V} \gamma v dv
+  \\
+  \\
+  \\
+  =\gamma m V^2-m \bigints\limits_{0}^{V}  \dfrac{v dv}{\sqrt{1-\dfrac{v^2}{c^2}}}
+  =\gamma m V^2+mc^2 \sqrt{1-\dfrac{v^2}{c^2}} \Big|_{0}^{V}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    KE=mc^2~ \bigg( \gamma -1 \bigg)
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+This expression does not look the kinetic energy formula in non-relativistic which is $\dfrac{1}{2} mv^2$, but when dealing 
+with really small velocities than the speed of light. 
+
+$
+  \\
+  \\
+  \gamma=\dfrac{1}{\sqrt{1-\dfrac{v^2}{c^2}}}=\bigg( 1-\dfrac{v^2}{c^2} \bigg)^{-1/2} \approx 1+\dfrac{1}{2} \dfrac{v^2}{c^2}+...
+  \\
+  \\
+  \\
+  \longrightarrow KE=mc^2~ \bigg( \gamma -1 \bigg) \approx \dfrac{1}{2} \dfrac{v^2}{c^2} mc^2
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    KE=\dfrac{1}{2} mv^2, ~~~~ v << c 
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+\pagebreak
+
+\textbf{Relationship between Energy and Momentum}
+
+\vspace{10px}
+
+In the Newtonian, we have $E=\dfrac{1}{2} ~ mv^2$ and $p=mv$, therefore $\boxed{E=\dfrac{p^2}{2m}}$. In the relativistic case though
+we have the following definitions:
+
+$
+  \\
+  \\
+  \begin{cases}
+    E= \gamma ~ mc^2
+    \\
+    \\
+    p=\gamma ~ mv
+    \\
+    \\
+    \gamma=\dfrac{1}{\sqrt{1-\dfrac{v^2}{c^2}}}
+  \end{cases} \Longrightarrow p^2 ~ c^2=\gamma^2 ~ m^2 ~ v^2 ~ c^2=\gamma^2 ~ m^2 ~ c^4 ~ \dfrac{v^2}{c^2}
+  =\gamma^2 ~ m^2 ~ c^4 \bigg( 1-\dfrac{1}{\gamma^2} \bigg)
+  \\
+  \\
+  \\
+  p^2 ~ c^2=\gamma^2 ~ m^2 ~ c^4 - m^2 ~ c^4
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    E^2=p^2 ~ c^2+m^2 ~ c^4
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+% \bigg( \bigg)
 
 \end{document}
