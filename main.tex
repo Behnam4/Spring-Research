@@ -1275,12 +1275,6 @@ $
   \\
   \\
   \\
-  \\
-  \\
-  % \\
-  % L.H.S: ~~~ \boxed{4 P^2_0 \bigg( E^2_2-m^2_2 c^4 \bigg) c^4 cos^2 \theta} ~~~~ \checkmark
-  % \\
-  % \\
 $
 
 Using $E^2=p^2 ~ c^2+m^2 ~ c^4$ we can rewrite the $L.H.S$ as 
@@ -1295,10 +1289,6 @@ $
     E^2-m^2 ~ c^4=p^2 ~ c^2
   \end{cases} \Longrightarrow L.H.S: ~~~ \boxed{4 P^2_0 \bigg( E^2_2-m^2_2 c^4 \bigg) c^2 cos^2 \theta}
   \\
-  \\
-$
-
-$
   \\
   \\
   \\
@@ -1383,7 +1373,7 @@ $
   \\
   \therefore ~~~ \boxed{
     \begin{cases}
-      KE_2=E_2-m_2 c^2=\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}-m_2 c^2
+      KE_2=E_2-m_2 c^2
       \\
       \\
       E_3=E_{tot}-E_2
@@ -1403,7 +1393,217 @@ $
   } ~~~~ \checkmark
   \\
   \\
+  \\
+  \\
 $
 
+\textbf{Relativistic kinematics in the COM frame}
+
+\vspace{10px}
+
+The COM velocity in the initial frame is
+
+$
+  \\
+  \\
+  v^i_{cm}=\dfrac{P_0+P_1}{E_0+E_1}=\dfrac{P_0}{E_{tot}}
+  \\
+  \\
+$
+
+From the conservation of momentum in the initial and final frames:
+
+$
+  \\
+  \\
+  \gamma^i_{cm} \bigg( m_0+m_1\bigg) \dfrac{v^i_{cm}}{c}=\gamma^f_{cm} \bigg( m_2+m_3\bigg) \dfrac{v^f_{cm}}{c}
+  \\
+  \\
+  \\
+  \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c}=\dfrac{v^f_{cm}/c}{\sqrt{1-\bigg( \dfrac{v^f_{cm}}{c}\bigg)^2}}
+  \\
+  \\
+  \\
+  \bigg( \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c} \bigg)^2=\bigg( \dfrac{v^f_{cm}/c}{\sqrt{1-\bigg( \dfrac{v^f_{cm}}{c}\bigg)^2}} \bigg)^2
+  \\
+  \\
+  \\
+  \bigg( \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c} \bigg)^2=\dfrac{\bigg( v^f_{cm}/c \bigg)^2}{1-\bigg( \dfrac{v^f_{cm}}{c}\bigg)^2}
+  \\
+  \\
+  \\
+  \bigg( v^f_{cm}/c \bigg)^2=\dfrac{
+    \bigg( \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c} \bigg)
+  }{
+    1+\bigg( \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c} \bigg)
+  }
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \dfrac{v^f_{cm}}{c}=\dfrac{
+      \bigg( \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c} \bigg)
+    }{
+      1+\bigg( \gamma^i_{cm} \dfrac{m_0+m_1}{m_2+m_3} \dfrac{v^i_{cm}}{c} \bigg)
+    }
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+The COM total and kinetic energies are calculated as
+
+$
+  \\
+  \\
+  \boxed{
+    \begin{cases}
+      E_{cm0}=\gamma^i_{cm} \bigg( E_0- c P_0 v^i_{cm} \bigg)
+      \\
+      \\
+      E_{cm1}=\gamma^i_{cm} \bigg( E_1- c P_1 v^i_{cm} \bigg)
+    \end{cases}, ~~~~~ 
+    \begin{cases}
+      KE_{cm0}=E_{cm0}-m_0 c^2
+      \\
+      \\
+      KE_{cm1}=E_{cm1}-m_1 c^2
+    \end{cases}
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+Using Lorentz's transformation matrix for ball 0 we have:
+
+$
+  \\
+  \\
+  \begin{pmatrix}
+    P_{cm0} c
+    \\
+    0
+    \\
+    0
+    \\
+    \dfrac{E_{cm0}}{c}
+  \end{pmatrix}=
+  \begin{pmatrix}
+    \gamma^i_{cm} && 0 && 0 && -\gamma^i_{cm} \dfrac{v^i_{cm}}{c}
+    \\
+    0 && 1 && 0 && 0
+    \\
+    0 && 0 && 1 && 0
+    \\
+    -\gamma^i_{cm} \dfrac{v^i_{cm}}{c} && 0 && 0 && \gamma^i_{cm}
+  \end{pmatrix}
+  \begin{pmatrix}
+    P_0 c
+    \\
+    0
+    \\
+    0
+    \\
+    \dfrac{E_0}{c}
+  \end{pmatrix}
+  \\
+  \\
+$
+
+Similar for the outgoing (final) frame balls 2 and 3 (after collision)
+
+$
+  \\
+  \\
+  \begin{pmatrix}
+    P_{cm3} c cos \phi_{cm}
+    \\
+    P_{cm3} c sin \phi_{cm}
+    \\
+    0
+    \\
+    \dfrac{E_{cm3}}{c}
+  \end{pmatrix}=
+  \begin{pmatrix}
+    \gamma^i_{cm} && 0 && 0 && -\gamma^i_{cm} \dfrac{v^i_{cm}}{c}
+    \\
+    0 && 1 && 0 && 0
+    \\
+    0 && 0 && 1 && 0
+    \\
+    -\gamma^i_{cm} \dfrac{v^i_{cm}}{c} && 0 && 0 && \gamma^i_{cm}
+  \end{pmatrix}
+  \begin{pmatrix}
+    P_{cm3} ~ c ~ cos \phi
+    \\
+    P_{cm3} ~ c ~ sin \phi
+    \\
+    0
+    \\
+    \dfrac{E_3}{c}
+  \end{pmatrix} ~~~~~~~ (A)
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \begin{cases}
+      E_{cm2}=\gamma^f \bigg( E_2-P_2 v^f_{cm} cos \theta  \bigg)
+      \\
+      \\
+      E_{cm3}=\gamma^f \bigg( E_3-P_3 v^f_{cm} cos \theta  \bigg)
+    \end{cases}, ~~~~
+    \begin{cases}
+      KE_{cm2}=E_{cm2}-m_2 c^2
+      \\
+      \\
+      KE_{cm3}=E_{cm3}-m_3 c^2
+    \end{cases}
+  } ~~~~ \checkmark
+  \\
+  \\
+$
+
+For relativistic velocities we have
+
+$
+  \\
+  \\
+  v_{cm0}=\dfrac{v_0-v^i_{cm}}{1-\dfrac{v_0 v^i_{cm}}{c^2}} \Longrightarrow v_{cm2} cos \theta_{cm}=\dfrac{v_2 cos \theta - v^i_{cm}}{1-\dfrac{v_0 cos \theta v^i_{cm}}{c^2}}
+  \\
+  \\
+  \\
+  \therefore ~~~ v_{cm2} sin \theta_{cm}=v_2 sin \theta
+  \\
+  \\
+  \\
+  \text{Knowing that} ~ \dfrac{v}{c}=\dfrac{P c}{E} \Longrightarrow \dfrac{v_{cm}}{c}=\sqrt{1-\dfrac{m^2 c^4}{E^2_{cm}}}
+  \\
+  \\
+  \\
+  \dfrac{v_{cm}}{c}=\sqrt{\bigg( \dfrac{P c}{E}\bigg)^2}=\sqrt{\dfrac{E^2-m^2 c^4}{E^2}}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{\dfrac{v_{cm}}{c}=\sqrt{1-\bigg( \dfrac{m^2 c^4}{E}\bigg)^2}} ~~~~ \checkmark
+  \\
+  \\
+  \\
+  \\
+  \\
+  \text{From (A) we have }
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \begin{cases}
+      \theta_{cm}=tan^{-1} \bigg( \dfrac{P_2 ~ c ~ sin\theta }{\gamma^f_{cm}  \bigg( P_2 ~ c ~ cos\theta -\dfrac{v^f_{cm}}{c} E_2 \bigg)   } \bigg)
+      \\
+      \\
+      \phi_{cm}=\pi-\theta_{cm}
+    \end{cases}
+  } ~~~~ \checkmark
+  \\
+  \\
+$
 
 \end{document}
