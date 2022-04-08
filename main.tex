@@ -1202,7 +1202,7 @@ $
   \\
   \therefore ~~~ \boxed{
     E^2=p^2 ~ c^2+m^2 ~ c^4
-  } ~~~~ \checkmark
+  } ~~~~~~ (I)
   \\
   \\
   \\
@@ -1219,6 +1219,32 @@ $
   \text{Momentum y-direction} ~~~ (II): ~~~ 0=P_2 ~ sin\theta -P_3 ~ sin \phi
   \\
   \\
+ $
+
+Before the collision occurs, one particle is moving and the one other is stationary. As the result of this 
+configuration, the energy of the first particle is $E_0$ and the rest-mass energy of the stationary particle 
+is $m_1 c^2$. \emph{The rest-mass energy is the energy that is stored inside a stationary particle as a result of its mass}.
+Rest-mass energy implies that mass is simply another form of energy. In fact, experiments readily show that mass 
+can be converted to energy (nuclear decay) and energy can be converted to mass (photon-pair production). Hence, we have:
+
+$
+  \\
+  E_0+m_1 c^2=E_2+E_3=E_{tot} \Longrightarrow \boxed{E_3=E_{tot}-E_2} ~~~~~~ (II)
+  \\
+  \\
+  \begin{cases}
+    P_0-P_2 cos \theta=P_3 cos \phi
+    \\
+    \\
+    P_2 sin \theta=-P_3 sin \phi
+  \end{cases}
+  \\
+  \\
+$
+
+Squaring and adding the above gives
+
+$
   \\
   \begin{cases}
     P^2_0+P^2_2 ~ cos^2\theta-2P_0 P_2 ~ cos \theta=P^2_3 ~ cos^2 \phi
@@ -1229,31 +1255,22 @@ $
   \\
   \\
   \\
-  \Longrightarrow
+  P^2_0+P^2_2 ~ cos^2\theta-2P_0 P_2 ~ cos \theta+P^2_2 ~ sin^2\theta=P^2_3 ~ cos^2 \phi+P^2_3 ~ sin^2 \phi
+  \\
+  \\
   P^2_0+P^2_2 \bigg( cos^2\theta+sin^2\theta \bigg)-2P_0 P_2 ~ cos \theta=P^2_3 \bigg( cos^2 \phi+sin^2 \phi \bigg)
   \\
   \\
-  \\
   P^2_0+P^2_2-2P_0 P_2 ~ cos \theta=P^2_3
-  \Longrightarrow
-  P^2_0 ~ c^2 +P^2_2 ~ c^2 -2P_0 P_2 c^2 ~ cos \theta=P^2_3 ~ c^2
-  \\
   \\
 $
 
-Earlier, it was shown that $E^2=p^2 ~ c^2+m^2 ~ c^4$. Energy conservation is:
-
-$$
-  E_0+m_0 c^2+Q=E_2+E_3=E_{tot} ~~~ \Longrightarrow ~~~ E^2_3=\bigg( E_{tot}-E_2 \bigg)^2
-$$
-
-Substituting the above into the last result gives us
+Multiplying both sides by $c^2$ gives $P^2_0 ~ c^2 +P^2_2 ~ c^2 -2P_0 P_2 c^2 ~ cos \theta=P^2_3 ~ c^2 ~~ (III)$. From equation $(I)$ we know
+$P^2 c^2=E^2-\bigg( m c^2 \bigg)^2$ , hence we rewrite the $R.H.S$ of $(III)$ with the help of $(II)$ as:
 
 $
   \\
-  \\
-  P^2_0 ~ c^2 +P^2_2 ~ c^2 -2P_0 P_2 c^2 ~ cos \theta=P^2_3 ~ c^2
-  =\bigg( E_{tot}-E_2 \bigg)^2- \bigg( m_3 c^2 \bigg)^2
+  P^2_0 ~ c^2 +P^2_2 ~ c^2 -2P_0 P_2 c^2 ~ cos \theta=P^2_3 ~ c^2=E^2_3-\bigg( m_3 c^2 \bigg)^2=\bigg( E_{tot}-E_2 \bigg)^2-\bigg( m_3 c^2 \bigg)^2
   \\
   \\
   \\
@@ -1261,34 +1278,27 @@ $
   \\
   \\
   \\
-  \bigg( m^2_3 c^4-m^2_2 c^4 \bigg)-2 P_0 P2 c^2 cos \theta+P^2_0 c^2=E^2_{tot}-2E_{tot} E_2
+  P^2_0 ~ c^2 +\bigg( P^2_2 ~ c^2 \bigg) -2P_0 P_2 c^2 ~ cos \theta=E^2_{tot}+E^2_2-2 E_{tot} E_2-m^2_3 c^4
   \\
   \\
   \\
-  2 P_0 P_2 c^2 cos \theta=\bigg( m^2_3 c^4-m^2_2 c^4 \bigg)+P_0^2 c^2+2 E_{tot} E_2-E^2_{tot}
+  P^2_0 ~ c^2 +\bigg( E^2_2-m^2_2 c^4 \bigg) -2P_0 P_2 c^2 ~ cos \theta=E^2_{tot}+E^2_2-2 E_{tot} E_2-m^2_3 c^4
   \\
   \\
   \\
-  4 P^2_0 P^2_2 c^4 cos^2 \theta=\left[
-    m^2_3 c^4-m^2_2 c^4+P_0^2 c^2+2 E_{tot} E_2-E^2_{tot}
-  \right]^2
+  P^2_0 ~ c^2+E^2_2-m^2_2 c^4-2 P_0 P_2 c^2 cos \theta-E^2_2+m^2_3 c^4=E^2_{tot}-2E_{tot} E_2
   \\
   \\
+  \\
+  2 P_0 P_2 c^2 cos\theta=P^2_0 c^2-m^2_2 c^4+m^2_3 c^4-E^2_{tot}+2 E_{tot} E_2
   \\
 $
 
-Using $E^2=p^2 ~ c^2+m^2 ~ c^4$ we can rewrite the $L.H.S$ as 
+Squaring both sides of the above leads to
 
 $
   \\
-  \\
-  \begin{cases}
-    4 P^2_0 P^2_2 c^4 cos^2 \theta
-    \\
-    \\
-    E^2-m^2 ~ c^4=p^2 ~ c^2
-  \end{cases} \Longrightarrow L.H.S: ~~~ \boxed{4 P^2_0 \bigg( E^2_2-m^2_2 c^4 \bigg) c^2 cos^2 \theta}
-  \\
+  4 P^2_0 P^2_2 c^4 cos^2\theta=\bigg( m^2_3 c^4-m^2_2 c^4+P_0^2 c^2+2 E_{tot} E_2-E^2_{tot} \bigg)^2
   \\
   \\
   \\
