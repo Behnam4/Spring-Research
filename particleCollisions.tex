@@ -1408,7 +1408,7 @@ $
 % The system we are working on has two particles in it. Let's name particles $0$ and $2$ which are the same 
 % particles but we used different numbers to indicate the before and after state of the collision, particle $a$ and let's
 % rename particle $1$ and $3$ which again are the same particle $b$. Also, 
-For simplicity, we assumme $c=1$ therefore equation $(IV)$ becomes 
+For simplicity, we assume $c=1$ therefore equation $(IV)$ becomes 
 
 $
   \\
@@ -1454,12 +1454,9 @@ $
   \\
   \\
   E_2=\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}
-  \\
-  \\
-  \\
-  \\
-  \\
 $
+
+\pagebreak
 
 \textbf{Relativistic kinematics in the COM frame}
 
@@ -1668,6 +1665,139 @@ $
   } ~~~~ \checkmark
   \\
   \\
+$
+
+\pagebreak
+
+\textbf{Deriving non-relativistic from relativistic in the COM frame}
+
+\vspace{10px}
+
+When studying the relativistic case we had
+
+\vspace{10px}
+
+$
+  \begin{cases}
+    \gamma=\dfrac{1}{\sqrt{1-\bigg( \dfrac{v}{c} \bigg)^2}}
+    \\
+    \\
+    p=\gamma ~ m v
+    \\
+    \\
+    E=\gamma ~ m c^2
+  \end{cases} \Longrightarrow E=\gamma ~ \dfrac{p}{\gamma v} c^2=\dfrac{pc^2}{v}
+  \Longrightarrow \boxed{\dfrac{pc}{E}=\dfrac{v}{c}}
+  \\
+  \\
+$
+
+Generally speaking, non-relativistic limit for a moving particle is to assume that its velocity is much smaller 
+than the speed of ligh, $\dfrac{v}{c} << 1$. Momentum conservation before and after the collision. Considering
+the relativistic formula of momentum we have:
+
+\vspace{10px}
+
+$
+  \\
+  p_0+p_1=p_2+p_3
+  \\
+  \\
+  \\
+  \gamma_{cmi} ~ \bigg( m_0+m_1 \bigg)v_{cmi}=\gamma_{cmf} ~ \bigg( m_2+m_3 \bigg) v_{cmf}
+  \\
+  \\
+  \\
+  \text{Knowing } \dfrac{v}{c} << 1 
+  \Longrightarrow
+  \gamma=\dfrac{1}{\sqrt{1-\bigg( \dfrac{v}{c} \bigg)^2}} \approx \dfrac{1}{\sqrt{1-0}}=1
+  \\
+  \\
+  \\
+  \therefore ~~~ 1 \times ~ \bigg( m_0+m_1 \bigg)v_{cmi}=1 \times ~ \bigg( m_2+m_3 \bigg) v_{cmf}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    v_{cmf}= v_{cmi} \dfrac{m_0+m_1}{m_2+m_3}
+  } ~~~~ \checkmark
+  \\
+  \\
+  \\
+  \\
+  \gamma_{cmi} ~ \bigg( m_0+m_1 \bigg)v_{cmi} \times \dfrac{1}{c}=\gamma_{cmf} ~ \bigg( m_2+m_3 \bigg) v_{cmf} \times \dfrac{1}{c}
+  \\
+  \\
+  \\
+  \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}=\dfrac{v_{cmf}}{c} \dfrac{1}{\sqrt{1-\bigg( \dfrac{v_{cmf}}{c} \bigg)^2}}
+  \\
+  \\
+  \\
+  \left[ \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi} \right]^2
+  =\left[ \dfrac{v_{cmf}}{c} \dfrac{1}{\sqrt{1-\bigg( \dfrac{v_{cmf}}{c} \bigg)^2}} \right]^2
+  \\
+  \\
+  \\
+  \left[ \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi} \right]^2
+  =\bigg( \dfrac{v_{cmf}}{c} \bigg)^2 \dfrac{1}{1-\bigg( \dfrac{v_{cmf}}{c} \bigg)^2}
+  \\
+  \\
+  \\
+  \dfrac{
+    \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
+  }{
+    1+\dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
+  }
+  =\bigg( \dfrac{v_{cmf}}{c} \bigg)^2
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \dfrac{v_{cmf}}{c}=\sqrt{
+      \dfrac{
+        \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
+      }{
+        1+\dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
+      }
+    }
+  } ~~~~ \checkmark
+  \\
+  \\
+  \\
+  \\
+  \begin{cases}
+    E_{cm0}=\gamma_{cmi} \bigg( E_0 - p_0 ~ v_{cmi} ~ c\bigg)
+    \\
+    \\
+    KE_{cm0}=\gamma_{cmi} \bigg( E_0 - p_0 ~ v_{cmi} ~ c\bigg)-m_0 c^2
+    \\
+    \\
+    E_{cm1}=\gamma_{cmi} \bigg( E_1 - p_1 ~ v_{cmi} ~ c\bigg)
+    \\
+    \\
+    KE_{cm1}=\gamma_{cmi} \bigg( E_1 - p_1 ~ v_{cmi} ~ c\bigg)-m_1 c^2
+  \end{cases}
+  \\
+  \\
+  \\
+  \text{Since } \gamma \approx 1 \text{, then we have:}
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \begin{cases}
+      E_{cm0}=E_0 - p_0 ~ v_{cmi} ~ c
+      \\
+      \\
+      K.E_{cm0}=E_0 - p_0 ~ v_{cmi} ~ c-m_0 c^2
+      \\
+      \\
+      E_{cm1}=E_1 - p_1 ~ v_{cmi} ~ c
+      \\
+      \\
+      K.E_{cm1}=E_1 - p_1 ~ v_{cmi} ~ c-m_1 c^2
+    \end{cases}
+  } ~~~~ \checkmark
 $
 
 \end{document}
