@@ -1719,8 +1719,55 @@ $
   \\
 $
 
+Let's find an approximation of the Lorentz Factor using the \textbf{Taylor Expansion}:
+
+\vspace{10px}
+
+$
+  \\
+  \beta \equiv \dfrac{v}{c}
+  \Longrightarrow 
+  \gamma(\beta)=\dfrac{1}{\sqrt{1-\beta^2}}=\bigg( 1-\beta^2 \bigg)^{-\dfrac{1}{2}}
+  \\
+  \\
+  \\
+  \text{Recall that:} 
+  \\
+  \\
+  f(x)=\sum\limits_{n=0}^{\infty} \dfrac{f^n(x_0)}{n!} \bigg( x-x_0 \bigg)^n
+  =f(x_0)+\dfrac{f^'(x_0)}{1!} \bigg( x-x_0 \bigg)+\dfrac{f^{''}(x_0)}{2!} \bigg( x-x_0 \bigg)^2+\dfrac{f^{'''}(x_0)}{3!} \bigg( x-x_0 \bigg)^3+...
+  \\
+  \\
+  \\
+  \begin{cases}
+    \dfrac{d \gamma(\beta)}{d \beta}=\dfrac{d}{d\beta} \left[\bigg( 1-\beta^2 \bigg)^{-\dfrac{1}{2}} \right]
+    =\beta \bigg( 1- \beta^2 \bigg)^{-\dfrac{3}{2}}
+    \\
+    \\
+    \\
+    \dfrac{d^2 \gamma(\beta)}{d \beta^2}=\dfrac{d \beta}{d \beta} \bigg( 1- \beta^2 \bigg)^{-\dfrac{3}{2}}+\beta \dfrac{d}{d\beta} \bigg( 1- \beta^2 \bigg)^{-\dfrac{3}{2}}
+    =\bigg( 1-\beta^2 \bigg)^{-\dfrac{3}{2}}+3 \beta^2 \bigg( 1-\beta^2 \bigg)^{-\dfrac{5}{2}}
+  \end{cases}
+  \\
+  \\
+  \\
+  \gamma(0)=\gamma(0)+\dfrac{\gamma^'(0)}{1!} \beta+\dfrac{\gamma^{''}(0)}{2!} \beta^2+...
+  =1+0+\dfrac{\beta^2}{2}+...
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \gamma=\dfrac{1}{\sqrt{1-\beta^2}}=\sum\limits_{n=0}^{\infty} \dfrac{\bigg( 2n \bigg)!}{\bigg( 2^n ~ n!\bigg)^2} \beta^{2n}
+  } ~~~~ \checkmark
+  , ~~~~~~~~~ \therefore ~~~ \boxed{
+    \gamma=1+\dfrac{1}{2} \beta^2+\dfrac{3}{8} \beta^4+\dfrac{5}{16} \beta^6+...
+  } ~~~~ \checkmark
+$
+
+\pagebreak
+
 Generally speaking, non-relativistic limit for a moving particle is to assume that its velocity is much smaller 
-than the speed of ligh, $\dfrac{v}{c} << 1$. Momentum conservation before and after the collision. Considering
+than the speed of light, $\dfrac{v}{c} << 1$. Momentum conservation before and after the collision. Considering
 the relativistic formula of momentum we have:
 
 \vspace{10px}
@@ -1735,16 +1782,83 @@ $
   \\
   \\
   \\
-  \text{Knowing } \dfrac{v}{c} << 1 
-  \Longrightarrow
-  \gamma=\dfrac{1}{\sqrt{1-\bigg( \dfrac{v}{c} \bigg)^2}} \approx \dfrac{1}{\sqrt{1-0}}=1
+  \text{Taking the first two terms of the Lorentz Factor gives us } \gamma=1+\dfrac{1}{2} \dfrac{v^2}{c^2}
   \\
   \\
   \\
-  \therefore ~~~ 1 \times ~ \bigg( m_0+m_1 \bigg)v_{cmi}=1 \times ~ \bigg( m_2+m_3 \bigg) v_{cmf}
+  \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \bigg( m_0+m_1 \bigg)v_{cmi}=\bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmf}}{c^2} \bigg) ~ \bigg( m_2+m_3 \bigg) v_{cmf}
   \\
   \\
   \\
+  v_{cmi} \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}=v_{cmf} \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmf}}{c^2} \bigg)
+  \\
+  \\
+  \\
+  v_{cmi} \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}=v_{cmf}+\dfrac{v^3_{cmf}}{2c^2}
+  \\
+  \\
+  \\
+  \begin{cases}
+    \mathcal{S} \equiv v_{cmi} 2c^2 \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}
+    \\
+    \\
+    \mathcal{X} \equiv v_{cmf} 
+  \end{cases}
+  \Longrightarrow \mathcal{X}+\dfrac{\mathcal{X}^3}{2c^2}=\mathcal{S}
+  \\
+  \\
+  \\
+  \mathcal{X}^3+2c^2 \mathcal{X}-\mathcal{S}=0
+  \\
+  \\
+  \\
+  \text{We make } \mathcal{X}=p+q,
+  \\
+  \\
+  \\
+  \bigg( p+q \bigg)^3+2c^2 \bigg( p+q \bigg)-\mathcal{S}=0
+  \Longrightarrow 
+  p^3+q^3+3p^2q+3pq^2+2c^2 \bigg( p+q \bigg)-\mathcal{S}=0
+  \\
+  \\
+  \\
+  p^3+q^3+3pq \bigg( p+q \bigg)+2c^2 \bigg( p+q \bigg)-\mathcal{S}=0
+  \\
+  \\
+  \\
+  p^3+q^3+\bigg( 3pq+2c^2 \bigg) \bigg( p+q \bigg)-\mathcal{S}=0
+  \\
+  \\
+  \\
+  \text{We know impose that } 3pq+2c^2=0
+  \Longrightarrow p^3+\bigg( \dfrac{-2c^2}{3 p} \bigg)^3-\mathcal{S}=0
+  \\
+  \\
+  \\
+  p^3+\bigg( \dfrac{-8c^6}{27 p^3} \bigg)^3-\mathcal{S}=0
+  \\
+  \\
+  \\
+  \text{This is just a a quadratic equation. There's only one variable now. So we might as well call } Z=p^3
+  \\
+  \\
+  \\
+  Z+\dfrac{-8c^6}{27 Z}-\mathcal{S}=0 \Longrightarrow \boxed{
+    27 Z^2-27 \mathcal{S} Z-8c^6=0
+  }
+  \\
+  \\
+  \\
+  Z=\dfrac{
+    27 \mathcal{S} \pm \sqrt{729 \mathcal{S}^2-864 c^6}
+  }{
+    54
+  }
+$
+
+\pagebreak
+
+$
   \therefore ~~~ \boxed{
     v_{cmf}= v_{cmi} \dfrac{m_0+m_1}{m_2+m_3}
   } ~~~~ \checkmark
@@ -1826,5 +1940,11 @@ $
     \end{cases}
   } ~~~~ \checkmark
 $
+
+\pagebreak
+
+\textbf{Direct detection constraints on light dark matter}
+
+\vspace{10px}
 
 \end{document}
