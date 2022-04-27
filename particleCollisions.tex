@@ -1794,12 +1794,12 @@ $
   \\
   \\
   \\
-  v_{cmi} \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}=v_{cmf}+\dfrac{v^3_{cmf}}{2c^2}
+  \bigg( v_{cmi}+\dfrac{v^3_{cmi}}{2c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}=v_{cmf}+\dfrac{v^3_{cmf}}{2c^2}
   \\
   \\
   \\
   \begin{cases}
-    \mathcal{S} \equiv v_{cmi} 2c^2 \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}
+    \mathcal{S} \equiv\bigg( v_{cmi}+\dfrac{v^3_{cmi}}{2c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}
     \\
     \\
     \mathcal{X} \equiv v_{cmf} 
@@ -1808,52 +1808,48 @@ $
   \\
   \\
   \\
-  \mathcal{X}^3+2c^2 \mathcal{X}-\mathcal{S}=0
+  \mathcal{X}^3+2c^2 \mathcal{X}-2c^2\mathcal{S}=0
+  \\
+  \\
+$
+
+Recall that the general solution to the cubic equation $x^3+px+q=0$ is
+
+$
+  \\
+  x=\sqrt[3]{-\dfrac{q}{2}-\sqrt{(\dfrac{q}{2})^2+(\dfrac{p}{3})^3}}
+  +\sqrt[3]{-\dfrac{q}{2}+\sqrt{(\dfrac{q}{2})^2+(\dfrac{p}{3})^3}}
+  \\
+  \\
+$
+
+It is very important to know that how many solutions our cubic equation has. For positive $p$, 
+there can be only one solution, but for a negative $p$, one, two or three solutions are possible. 
+To figure out how many solutions we get for negative $p$, we need to determine the difference in height 
+between the inflection point and the two extrema.
+
+\pagebreak
+
+$
+  \begin{cases}
+    p=2c^2
+    \\
+    \\
+    q=-\mathcal{S}
+  \end{cases}
   \\
   \\
   \\
-  \text{We make } \mathcal{X}=p+q,
+  \mathcal{X}=\sqrt[3]{\dfrac{\mathcal{S}}{2}-\sqrt{(\dfrac{\mathcal{S}}{2})^2+(\dfrac{2c^2}{3})^3}}
+  +\sqrt[3]{\dfrac{\mathcal{S}}{2}+\sqrt{(\dfrac{\mathcal{S}}{2})^2+(\dfrac{2c^2}{3})^3}}
   \\
   \\
   \\
-  \bigg( p+q \bigg)^3+2c^2 \bigg( p+q \bigg)-\mathcal{S}=0
-  \Longrightarrow 
-  p^3+q^3+3p^2q+3pq^2+2c^2 \bigg( p+q \bigg)-\mathcal{S}=0
+  =\sqrt[3]{\dfrac{\mathcal{S}}{2}-\sqrt{\dfrac{\mathcal{S}^2}{4}+\dfrac{8c^6}{27}}}
+  +\sqrt[3]{\dfrac{\mathcal{S}}{2}+\sqrt{\dfrac{\mathcal{S}^2}{4}+\dfrac{8c^6}{27}}}
   \\
   \\
   \\
-  p^3+q^3+3pq \bigg( p+q \bigg)+2c^2 \bigg( p+q \bigg)-\mathcal{S}=0
-  \\
-  \\
-  \\
-  p^3+q^3+\bigg( 3pq+2c^2 \bigg) \bigg( p+q \bigg)-\mathcal{S}=0
-  \\
-  \\
-  \\
-  \text{We know impose that } 3pq+2c^2=0
-  \Longrightarrow p^3+\bigg( \dfrac{-2c^2}{3 p} \bigg)^3-\mathcal{S}=0
-  \\
-  \\
-  \\
-  p^3+\bigg( \dfrac{-8c^6}{27 p^3} \bigg)^3-\mathcal{S}=0
-  \\
-  \\
-  \\
-  \text{This is just a a quadratic equation. There's only one variable now. So we might as well call } Z=p^3
-  \\
-  \\
-  \\
-  Z+\dfrac{-8c^6}{27 Z}-\mathcal{S}=0 \Longrightarrow \boxed{
-    27 Z^2-27 \mathcal{S} Z-8c^6=0
-  }
-  \\
-  \\
-  \\
-  Z=\dfrac{
-    27 \mathcal{S} \pm \sqrt{729 \mathcal{S}^2-864 c^6}
-  }{
-    54
-  }
 $
 
 \pagebreak
@@ -1943,8 +1939,86 @@ $
 
 \pagebreak
 
-\textbf{Direct detection constraints on light dark matter}
+\textbf{Novel direct detection constraints on light dark matter}
 
 \vspace{10px}
+
+What is dark matter? In simple words, \emph{Dark matter} is the mysterious stuff that fills the universe 
+but no one has ever seen. Over $80\%$ of all matter in the universe is made up of material scientists 
+have never seen. It's called dark matter and we only assume it exists because without it, the behaviour 
+of stars, planets and galaxies simply wouldn't make sense. Here is what we know about it, or rather, 
+what we think we know. Dark matter is composed of particles that do not \textbf{absorb, reflect, or emit light}, 
+so they cannot be detected by observing electromagnetic radiation. Dark matter is material that cannot 
+be seen directly.
+
+\vspace{20px}
+
+\textbf{ CR to DM fluxes:}
+
+\vspace{10px}
+
+Usual DM velocities in the galaxy are approximately $10^{-3} c$ are small compared to the velocities of 
+the CRs we consider, so we treat the DM as being at rest. The kinetic energy transferred
+to a stationary DM particle of mass $m_{\chi}$ by a CR with mass $m_i$ and kinetic energy $T_i$ is
+$$
+  T_{\chi}=T^{max}_{\chi} \dfrac{1- cos \theta}{2}, ~~ T^{max}_{\chi}=\dfrac{T^2_i+2 m_i T_i}{T_i+(m_i+m_{\chi})^2/ 2 m_{\chi}}
+$$
+
+where $\theta$ is the CM scattering angle. Inverting the above equation gives the minimal incoming CR energy 
+required to obtain a DM recoil energy $T_{\chi}$.
+
+\vspace{10px}
+
+$
+  \\
+  \bigg( T_{\chi} \bigg)^{-1}=\bigg( T^{max}_{\chi} \dfrac{1- cos \theta}{2} \bigg)^{-1} 
+  \\
+  \\
+  \\
+  \dfrac{1}{T_{\chi}}=\dfrac{2}{T^{max}_{\chi}(1-cos \theta)}
+  \Longrightarrow T^{max}_{\chi}=T_{\chi} \dfrac{2}{1-cos \theta}
+  \\
+  \\
+$
+
+Substituting the value of $T^{max}_{\chi}$ into the above result gives us
+
+$
+  \\
+  \dfrac{T^2_i+2 m_i T_i}{T_i+(m_i+m_{\chi})^2/ 2 m_{\chi}}=T_{\chi} \dfrac{2}{1-cos \theta}
+  \\
+  \\
+  \\
+  T^2_i+2m_i T_i (1-cos \theta)=2 T_{\chi} \left[T_i+\dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}\right]
+  \\
+  \\
+  \\
+  T^2_i+2m_i T_i (1-cos \theta)= 2 T_{\chi}T_i+2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}
+  \\
+  \\
+  \\
+  T^2_i+2m_i T_i (1-cos \theta)-2 T_{\chi}T_i=T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
+  \\
+  \\
+  \\
+  \boxed{T^2_i+\left[2m_i(1-cos \theta)-2 T_{\chi}\right]T_i-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}=0}
+  \\
+  \\
+  \\
+  \begin{cases}
+    a=1
+    \\
+    \\
+    b=2m_i(1-cos \theta)-2 T_{\chi}
+    \\
+    \\
+    c=-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
+  \end{cases}, ~~~~~ T_i=\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}
+  \\
+  \\
+  \\
+  \text{I was here}
+$
+
 
 \end{document}
