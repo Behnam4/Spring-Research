@@ -1240,10 +1240,10 @@ The equations for momentum conservation remain the same as non-relativistic case
 $
   \\
   \\
-  \text{Momentum x-direction} ~~~ (I): ~~~ P_0+0=P_2 ~ cos\theta+P_3 ~ cos \phi
+  \text{Momentum x-direction}: ~~~ P_1+0=P_3 ~ cos\theta+P_4 ~ cos \phi
   \\
   \\
-  \text{Momentum y-direction} ~~~ (II): ~~~ 0=P_2 ~ sin\theta -P_3 ~ sin \phi
+  \text{Momentum y-direction}: ~~~ 0=P_3 ~ sin\theta -P_4 ~ sin \phi
   \\
   \\
  $
@@ -1254,6 +1254,62 @@ is $m_1 c^2$. \emph{The rest-mass energy is the energy that is stored inside a s
 Rest-mass energy implies that mass is simply another form of energy. In fact, experiments readily show that mass 
 can be converted to energy (nuclear decay) and energy can be converted to mass (photon-pair production). Hence, we have:
 
+\vspace{10px}
+
+$
+  E_1+m_2 c^2=E_3+E_4=E_{tot} \Longrightarrow \boxed{E_4=E_{tot}-E_3} ~~~~ (1)
+  \\
+  \\
+  \begin{cases}
+    (2): ~~~ P_1-P_2 ~ cos\theta=P_3 ~ cos \phi
+    \\
+    \\
+    (3): ~~~ P_2 ~ sin\theta =-P_3 ~ sin \phi
+  \end{cases}
+  \\
+  \\
+$
+
+Squaring and adding gives us
+
+\vspace{10px}
+
+$
+  \\
+  \begin{cases}
+    P^2_1+P^2_2 cos^2 \theta-2 P_1 P_2 cos \theta=P^2_3 ~ cos^2 \phi
+    \\
+    \\
+    P^2_2 ~ sin^2\theta=P^2_3 ~ sin^2 \phi
+  \end{cases}
+  \\
+  \\
+  \\
+  P^2_1+P^2_2 cos^2 \theta-2 P_1 P_2 cos \theta+P^2_2 ~ sin^2\theta=P^2_3 ~ cos^2 \phi+P^2_3 ~ sin^2 \phi
+  \\
+  \\
+  \\
+  P^2_1+P^2_2 \bigg( cos^2 \theta+sin^2\theta \bigg)-2 P_1 P_2 cos \theta=P^2_3 ~ \bigg( cos^2 \phi+sin^2 \phi \bigg)
+  \\
+  \\
+  \\
+  P^2_1+P^2_2-2 P_1 P_2 cos \theta=P^2_3
+  \\
+  \\
+$
+
+Multiplying both sides by $c^2$ gives $P^2_1 c^2+P^2_2 c^2-2 P_1 P_2 c^2 cos \theta=P^2_3 c^2 ~~~~ (4)$. With the
+help of equation $(I)$ which is $E^2=P^2 c^2+m^2 c^4$ we can rewrite the R.H.S of equation $(4)$ with the help 
+of $(1)$.
+
+\vspace{10px}
+
+$
+  \\
+  P^2_1 c^2+P^2_2 c^2-2 P_1 P_2 c^2 cos \theta=P^2_3 c^2=E^2_3-\bigg(  \bigg)
+$
+
+\pagebreak
 
 \textbf{Deriving non-relativistic from relativistic in the COM frame}
 
@@ -1387,8 +1443,6 @@ there can be only one solution, but for a negative $p$, one, two or three soluti
 To figure out how many solutions we get for negative $p$, we need to determine the difference in height 
 between the inflection point and the two extrema.
 
-\pagebreak
-
 $
   \begin{cases}
     p=2c^2
@@ -1409,91 +1463,6 @@ $
   \\
   \\
   \\
-$
-
-\pagebreak
-
-$
-  \therefore ~~~ \boxed{
-    v_{cmf}= v_{cmi} \dfrac{m_0+m_1}{m_2+m_3}
-  } ~~~~ \checkmark
-  \\
-  \\
-  \\
-  \\
-  \gamma_{cmi} ~ \bigg( m_0+m_1 \bigg)v_{cmi} \times \dfrac{1}{c}=\gamma_{cmf} ~ \bigg( m_2+m_3 \bigg) v_{cmf} \times \dfrac{1}{c}
-  \\
-  \\
-  \\
-  \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}=\dfrac{v_{cmf}}{c} \dfrac{1}{\sqrt{1-\bigg( \dfrac{v_{cmf}}{c} \bigg)^2}}
-  \\
-  \\
-  \\
-  \left[ \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi} \right]^2
-  =\left[ \dfrac{v_{cmf}}{c} \dfrac{1}{\sqrt{1-\bigg( \dfrac{v_{cmf}}{c} \bigg)^2}} \right]^2
-  \\
-  \\
-  \\
-  \left[ \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi} \right]^2
-  =\bigg( \dfrac{v_{cmf}}{c} \bigg)^2 \dfrac{1}{1-\bigg( \dfrac{v_{cmf}}{c} \bigg)^2}
-  \\
-  \\
-  \\
-  \dfrac{
-    \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
-  }{
-    1+\dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
-  }
-  =\bigg( \dfrac{v_{cmf}}{c} \bigg)^2
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    \dfrac{v_{cmf}}{c}=\sqrt{
-      \dfrac{
-        \dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
-      }{
-        1+\dfrac{\gamma_{cmi}}{c} \dfrac{\bigg( m_0+m_1 \bigg)}{\bigg( m_2+m_3 \bigg)} v_{cmi}
-      }
-    }
-  } ~~~~ \checkmark
-  \\
-  \\
-  \\
-  \\
-  \begin{cases}
-    E_{cm0}=\gamma_{cmi} \bigg( E_0 - p_0 ~ v_{cmi} ~ c\bigg)
-    \\
-    \\
-    KE_{cm0}=\gamma_{cmi} \bigg( E_0 - p_0 ~ v_{cmi} ~ c\bigg)-m_0 c^2
-    \\
-    \\
-    E_{cm1}=\gamma_{cmi} \bigg( E_1 - p_1 ~ v_{cmi} ~ c\bigg)
-    \\
-    \\
-    KE_{cm1}=\gamma_{cmi} \bigg( E_1 - p_1 ~ v_{cmi} ~ c\bigg)-m_1 c^2
-  \end{cases}
-  \\
-  \\
-  \\
-  \text{Since } \gamma \approx 1 \text{, then we have:}
-  \\
-  \\
-  \\
-  \therefore ~~~ \boxed{
-    \begin{cases}
-      E_{cm0}=E_0 - p_0 ~ v_{cmi} ~ c
-      \\
-      \\
-      K.E_{cm0}=E_0 - p_0 ~ v_{cmi} ~ c-m_0 c^2
-      \\
-      \\
-      E_{cm1}=E_1 - p_1 ~ v_{cmi} ~ c
-      \\
-      \\
-      K.E_{cm1}=E_1 - p_1 ~ v_{cmi} ~ c-m_1 c^2
-    \end{cases}
-  } ~~~~ \checkmark
 $
 
 \pagebreak
@@ -1544,31 +1513,31 @@ Substituting the value of $T^{max}_{\chi}$ into the above result gives us
 
 $
   \\
-  \dfrac{T^2_i+2 m_i T_i}{T_i+(m_i+m_{\chi})^2/ 2 m_{\chi}}=T_{\chi} \dfrac{2}{1-cos \theta}
+  \dfrac{(T^2_i+2 m_i T_i )}{T_i+(m_i+m_{\chi})^2/ 2 m_{\chi}}=T_{\chi} \dfrac{2}{1-cos \theta}
   \\
   \\
   \\
-  T^2_i+2m_i T_i (1-cos \theta)=2 T_{\chi} \left[T_i+\dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}\right]
+  (T^2_i+2 m_i T_i) (1-cos \theta)=2 T_{\chi} \left[T_i+\dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}\right]
   \\
   \\
   \\
-  T^2_i+2m_i T_i (1-cos \theta)= 2 T_{\chi}T_i+2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}
+  T^2_i-T^2_i cos \theta+2 m_i T_i-2m_i T_i cos \theta=2 T_{\chi}T_i+2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}
   \\
   \\
   \\
-  T^2_i+2m_i T_i (1-cos \theta)-2 T_{\chi}T_i=T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
+  T^2_i-T^2_i cos \theta+2 m_i T_i-2m_i T_i cos \theta-2 T_{\chi}T_i-2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{2 m_{\chi}}=0
   \\
   \\
   \\
-  \boxed{T^2_i+2\left[m_i(1-cos \theta)-T_{\chi}\right]T_i-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}=0}
+  \boxed{(1-cos \theta) T^2_i+2 \bigg(m_i -m_i cos \theta-T_{\chi}\bigg)T_i-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}=0}
   \\
   \\
   \\
   \begin{cases}
-    a=1
+    a=(1-cos \theta)
     \\
     \\
-    b=2\left[m_i(1-cos \theta)-T_{\chi}\right]
+    b=2 \bigg(m_i -m_i cos \theta-T_{\chi}\bigg)
     \\
     \\
     c=-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
@@ -1576,54 +1545,121 @@ $
   \\
   \\
   \\
-  T_i=\dfrac{-2\left[m_i(1-cos \theta)-T_{\chi}\right] \pm \sqrt{\bigg( 2\left[m_i(1-cos \theta)-T_{\chi}\right] \bigg)^2-4(1) \bigg( -T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }}{2(1)}
-  \\
-  \\
-  \\
-  T_i=\dfrac{-2\left[m_i(1-cos \theta)-T_{\chi}\right] \pm 2 \sqrt{\bigg(\left[m_i(1-cos \theta)-T_{\chi}\right] \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}}{2}
-  \\
-  \\
-  \\
-  T_i=T_{\chi}-m_i(1-cos \theta) \pm \sqrt{\bigg(\left[m_i(1-cos \theta)-T_{\chi}\right] \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
-  \\
-  \\
-  \\
-  \text{If } \boxed{\theta=\pi} \text{ then:}
-  \\
-  \\
-  \\
-  T^{min}_i=T_{\chi}-m_i(1-cos \pi) \pm \sqrt{\bigg(\left[m_i(1-cos \pi)-T_{\chi}\right] \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
-  \\
-  \\
-  \\
-  T^{min}_i=\bigg( T_{\chi}-2m_i \bigg) \pm \sqrt{\bigg( 2m_i-T_{\chi} \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
-  \\
-  \\
-  \\
-  \dfrac{T^{min}_i}{\bigg( 2m_i-T_{\chi} \bigg)}=\dfrac{\bigg( T_{\chi}-2m_i \bigg) \pm \sqrt{\bigg( 2m_i-T_{\chi} \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}}{\bigg( 2m_i-T_{\chi} \bigg)}
-  \\
-  \\
-  \\
-  \dfrac{T^{min}_i}{\bigg( 2m_i-T_{\chi} \bigg)}=\dfrac{\bigg( T_{\chi}-2m_i \bigg)}{\bigg( 2m_i-T_{\chi} \bigg)} \pm \sqrt{
-    \dfrac{
-      \bigg( 2m_i-T_{\chi} \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
-    }{
-      \bigg( 2m_i-T_{\chi} \bigg)^2
-    }
+  T_i=\dfrac{
+    -2 \bigg(m_i -m_i cos \theta-T_{\chi}\bigg) \pm \sqrt{\bigg( 2 (m_i -m_i cos \theta-T_{\chi}) \bigg)^2-4(1-cos \theta) \bigg( -T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }
+  }{
+    2(1-cos \theta)
   }
   \\
   \\
   \\
-  \dfrac{T^{min}_i}{\bigg( 2m_i-T_{\chi} \bigg)}=-1 \pm \sqrt{1+\dfrac{T_{\chi}}{m_{\chi}} \dfrac{(m_i+m_{\chi})^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}}
+  T_i=\dfrac{
+    -2 \bigg(m_i -m_i cos \theta-T_{\chi}\bigg) \pm 2 \sqrt{\bigg(m_i -m_i cos \theta-T_{\chi}\bigg)^2-(1-cos \theta) \bigg( -T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }
+  }{
+    2(1-cos \theta)
+  }
   \\
   \\
   \\
-  T^{min}_i=-\bigg( 2m_i-T_{\chi} \bigg) \pm \bigg( 2m_i-T_{\chi} \bigg) \sqrt{1+\dfrac{T_{\chi}}{m_{\chi}} \dfrac{(m_i+m_{\chi})^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}}
+  T_i=\dfrac{
+    \bigg(T_{\chi}+m_i cos \theta-m_i\bigg) \pm \sqrt{\bigg(m_i -m_i cos \theta-T_{\chi}\bigg)^2+\bigg( 1-cos \theta \bigg)  \bigg(T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }
+  }{
+    \bigg( 1-cos \theta \bigg) 
+  }
+  \\
+  \\
+  \\
+  \text{If } \boxed{\theta=\pi} \text{ then}
+  \\
+  \\
+  \\
+  T_i=\dfrac{
+    \bigg(T_{\chi}+m_i cos \pi-m_i\bigg) \pm \sqrt{\bigg(m_i-m_i cos \pi-T_{\chi}\bigg)^2+\bigg( 1-cos \pi \bigg)  \bigg(T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }
+  }{
+    \bigg( 1-cos \pi\bigg) 
+  }
+  \\
+  \\
+  \\
+  T_i=\dfrac{
+    \bigg(T_{\chi}-m_i-m_i\bigg) \pm \sqrt{\bigg(2m_i-T_{\chi}\bigg)^2+\bigg( 1+1 \bigg)  \bigg(T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }
+  }{
+    \bigg( 1+1 \bigg) 
+  }
+  \\
+  \\
+  \\
+  T_i=\dfrac{
+    \bigg(T_{\chi}-2m_i\bigg) \pm \sqrt{\bigg(2m_i-T_{\chi}\bigg)^2+ 2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  }{
+    2 
+  }
+  \\
+  \\
+  \\
+  2 T_i=\bigg(T_{\chi}-2m_i\bigg) \pm \sqrt{\bigg(2m_i-T_{\chi}\bigg)^2+ 2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  \\
+  \\
+  \\
+  \dfrac{
+    2 T_i
+  }{
+    \bigg(2m_i-T_{\chi}\bigg)
+  }
+  =\dfrac{
+    \bigg(T_{\chi}-2m_i\bigg) \pm \sqrt{\bigg(2m_i-T_{\chi}\bigg)^2+ 2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  }{
+    \bigg(2m_i-T_{\chi}\bigg)
+  }
+  \\
+  \\
+  \\
+  \dfrac{
+    2 T_i
+  }{
+    \bigg(2m_i-T_{\chi}\bigg)
+  }
+  =\dfrac{
+    \bigg(T_{\chi}-2m_i\bigg)
+  }{
+    \bigg(2m_i-T_{\chi}\bigg)
+  }
+  \pm\dfrac{
+    \sqrt{\bigg(2m_i-T_{\chi}\bigg)^2+ 2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  }{
+    \bigg(2m_i-T_{\chi}\bigg)
+  }
+  \\
+  \\
+  \\
+  \dfrac{
+    2 T_i
+  }{
+    \bigg(2m_i-T_{\chi}\bigg)
+  }
+  =-1 \pm \sqrt{\dfrac{\bigg(2m_i-T_{\chi}\bigg)^2+ 2 T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}{\bigg(2m_i-T_{\chi}\bigg)^2}}
+  \\
+  \\
+  \\
+  \dfrac{2 T_i}{\bigg(2m_i-T_{\chi}\bigg)}
+  =-1 \pm \sqrt{1+\dfrac{2 T_{\chi}}{m_{\chi}} \dfrac{\bigg( m_i+m_{\chi} \bigg)^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}}
+  \\
+  \\
+  \\
+  2T_i=-\bigg( 2m_i-T_{\chi} \bigg) \pm \bigg(2m_i-T_{\chi}\bigg) \sqrt{1+\dfrac{2 T_{\chi}}{m_{\chi}} \dfrac{\bigg( m_i+m_{\chi} \bigg)^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}}
+  \\
+  \\
+  \\
+  2T_i=\bigg( 2m_i-T_{\chi} \bigg) \left[ -1 \pm \sqrt{1+\dfrac{2 T_{\chi}}{m_{\chi}} \dfrac{\bigg( m_i+m_{\chi} \bigg)^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}} \right]
+  \\
+  \\
+  \\
+  2T_i=\bigg( T_{\chi}-2m_i \bigg) \left[ 1 \pm \sqrt{1+\dfrac{2 T_{\chi}}{m_{\chi}} \dfrac{\bigg( m_i+m_{\chi} \bigg)^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}} \right]
   \\
   \\
   \\
   \therefore ~~~ \boxed{
-    T^{min}_i=\bigg( T_{\chi}-2m_i \bigg) \left[1 \pm \sqrt{1+\dfrac{T_{\chi}}{m_{\chi}} \dfrac{(m_i+m_{\chi})^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}} \right]
+    T^{min}_i=\bigg( \dfrac{T_{\chi}}{2}-m_i \bigg) \left[ 1 \pm \sqrt{1+\dfrac{2 T_{\chi}}{m_{\chi}} \dfrac{\bigg( m_i+m_{\chi} \bigg)^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}} \right]
   } ~~~~ \checkmark
 $
 
