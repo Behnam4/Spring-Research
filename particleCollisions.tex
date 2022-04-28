@@ -2001,7 +2001,7 @@ $
   \\
   \\
   \\
-  \boxed{T^2_i+\left[2m_i(1-cos \theta)-2 T_{\chi}\right]T_i-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}=0}
+  \boxed{T^2_i+2\left[m_i(1-cos \theta)-T_{\chi}\right]T_i-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}=0}
   \\
   \\
   \\
@@ -2009,7 +2009,7 @@ $
     a=1
     \\
     \\
-    b=2m_i(1-cos \theta)-2 T_{\chi}
+    b=2\left[m_i(1-cos \theta)-T_{\chi}\right]
     \\
     \\
     c=-T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
@@ -2017,8 +2017,53 @@ $
   \\
   \\
   \\
-  \text{I was here}
+  T_i=\dfrac{-2\left[m_i(1-cos \theta)-T_{\chi}\right] \pm \sqrt{\bigg( 2\left[m_i(1-cos \theta)-T_{\chi}\right] \bigg)^2-4(1) \bigg( -T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}} \bigg) }}{2(1)}
+  \\
+  \\
+  \\
+  T_i=\dfrac{-2\left[m_i(1-cos \theta)-T_{\chi}\right] \pm 2 \sqrt{\bigg(\left[m_i(1-cos \theta)-T_{\chi}\right] \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}}{2}
+  \\
+  \\
+  \\
+  T_i=T_{\chi}-m_i(1-cos \theta) \pm \sqrt{\bigg(\left[m_i(1-cos \theta)-T_{\chi}\right] \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  \\
+  \\
+  \\
+  \text{If } \boxed{\theta=\pi} \text{ then:}
+  \\
+  \\
+  \\
+  T^{min}_i=T_{\chi}-m_i(1-cos \pi) \pm \sqrt{\bigg(\left[m_i(1-cos \pi)-T_{\chi}\right] \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  \\
+  \\
+  \\
+  T^{min}_i=\bigg( T_{\chi}-2m_i \bigg) \pm \sqrt{\bigg( 2m_i-T_{\chi} \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}
+  \\
+  \\
+  \\
+  \dfrac{T^{min}_i}{\bigg( 2m_i-T_{\chi} \bigg)}=\dfrac{\bigg( T_{\chi}-2m_i \bigg) \pm \sqrt{\bigg( 2m_i-T_{\chi} \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}}}{\bigg( 2m_i-T_{\chi} \bigg)}
+  \\
+  \\
+  \\
+  \dfrac{T^{min}_i}{\bigg( 2m_i-T_{\chi} \bigg)}=\dfrac{\bigg( T_{\chi}-2m_i \bigg)}{\bigg( 2m_i-T_{\chi} \bigg)} \pm \sqrt{
+    \dfrac{
+      \bigg( 2m_i-T_{\chi} \bigg)^2+T_{\chi} \dfrac{(m_i+m_{\chi})^2}{m_{\chi}}
+    }{
+      \bigg( 2m_i-T_{\chi} \bigg)^2
+    }
+  }
+  \\
+  \\
+  \\
+  \dfrac{T^{min}_i}{\bigg( 2m_i-T_{\chi} \bigg)}=-1 \pm \sqrt{1+\dfrac{T_{\chi}}{m_{\chi}} \dfrac{(m_i+m_{\chi})^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}}
+  \\
+  \\
+  \\
+  T^{min}_i=-\bigg( 2m_i-T_{\chi} \bigg) \pm \bigg( 2m_i-T_{\chi} \bigg) \sqrt{1+\dfrac{T_{\chi}}{m_{\chi}} \dfrac{(m_i+m_{\chi})^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}}
+  \\
+  \\
+  \\
+  T^{min}_i=\bigg( T_{\chi}-2m_i \bigg) \left[1 \pm \sqrt{1+\dfrac{T_{\chi}}{m_{\chi}} \dfrac{(m_i+m_{\chi})^2}{\bigg( 2m_i-T_{\chi} \bigg)^2}} \right]
 $
-
 
 \end{document}
