@@ -1300,8 +1300,78 @@ $
   \\
 $
 
-Multiplying both sides by $c^2$ gives $P^2_1 c^2+Q^2_1 c^2 -2 P_1 Q_1 c^2 cos \theta=Q^2_2 c^2$.
+Multiplying both sides by $c^2$ gives: 
 
+$
+  \\
+  \\
+  P^2_1 c^2+Q^2_1 c^2 -2 P_1 Q_1 c^2 cos \theta=Q^2_2 c^2
+  \\
+  \\
+  \\
+  P^2_1 c^2+Q^2_1 c^2 -2 P_1 Q_1 c^2 cos \theta=Q^2_2 c^2=\bigg( E_{tot}-E_3 \bigg)^2-\bigg( m_2 c^2 \bigg)^2 ~~~ \text{since } E^2=p^2c^2+m^2 c^4
+  \\
+  \\
+  \\
+  P^2_1 c^2+Q^2_1 c^2 -2 P_1 Q_1 c^2 cos \theta
+  =E^2_{tot}+E^2_3-2 E_{tot} E_3-m^2_2 c^4
+  \\
+  \\
+  \\
+  P^2_1 c^2+\bigg( Q^2_1 c^2+m^2_2 c^4 \bigg)-2 P_1 Q_1 c^2 cos \theta
+  =E^2_{tot}+E^2_3-2 E_{tot} E_3
+  \\
+  \\
+  \\
+  P^2_1 c^2+E^2_3-2 P_1 Q_1 c^2 cos \theta
+  =E^2_{tot}+E^2_3-2 E_{tot} E_3
+  \\
+  \\
+  \\
+  P^2_1 c^2-2 P_1 Q_1 c^2 cos \theta
+  =E^2_{tot}-2 E_{tot} E_3
+  \\
+  \\
+  \\
+  \therefore ~~~ E_3=\dfrac{
+    E^2_{tot}+2 P_1 Q_1 c^2 cos \theta-P^2_1 c^2
+  }{
+    2 E_{tot}
+  }
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    E_3=\dfrac{
+      E^2_{tot}+P^2_1 \bigg( 2 Q_1 cos \theta-1 \bigg)
+    }{
+      2 E_{tot}
+    }
+  } ~~~ \text{considering } c=1
+  \\
+  \\
+  \\
+  \therefore ~~~ \boxed{
+    \begin{cases}
+      KE_3=E_3-m_1
+      \\
+      \\
+      E_4=E_{tot}-E_3
+      \\
+      \\
+      KE_4=E_4-m_2
+      \\
+      \\
+      Q_1=\sqrt{E^2_3-m^2_1}
+      \\
+      \\
+      Q_2=\sqrt{E^2_4-m^2_2}
+      \\
+      \\
+      \phi=Arcsin\bigg( \dfrac{Q_1}{Q_2} sin\theta \bigg)
+    \end{cases}
+  } ~~~~ \checkmark
+$
 
 
 \pagebreak
@@ -1372,92 +1442,6 @@ $
   , ~~~~~~~~~ \therefore ~~~ \boxed{
     \gamma=1+\dfrac{1}{2} \beta^2+\dfrac{3}{8} \beta^4+\dfrac{5}{16} \beta^6+...
   } ~~~~ \checkmark
-$
-
-\pagebreak
-
-Generally speaking, non-relativistic limit for a moving particle is to assume that its velocity is much smaller 
-than the speed of light, $\dfrac{v}{c} << 1$. Momentum conservation before and after the collision. Considering
-the relativistic formula of momentum we have:
-
-\vspace{10px}
-
-$
-  \\
-  p_0+p_1=p_2+p_3
-  \\
-  \\
-  \\
-  \gamma_{cmi} ~ \bigg( m_0+m_1 \bigg)v_{cmi}=\gamma_{cmf} ~ \bigg( m_2+m_3 \bigg) v_{cmf}
-  \\
-  \\
-  \\
-  \text{Taking the first two terms of the Lorentz Factor gives us } \gamma=1+\dfrac{1}{2} \dfrac{v^2}{c^2}
-  \\
-  \\
-  \\
-  \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \bigg( m_0+m_1 \bigg)v_{cmi}=\bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmf}}{c^2} \bigg) ~ \bigg( m_2+m_3 \bigg) v_{cmf}
-  \\
-  \\
-  \\
-  v_{cmi} \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmi}}{c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}=v_{cmf} \bigg( 1+\dfrac{1}{2} \dfrac{v^2_{cmf}}{c^2} \bigg)
-  \\
-  \\
-  \\
-  \bigg( v_{cmi}+\dfrac{v^3_{cmi}}{2c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}=v_{cmf}+\dfrac{v^3_{cmf}}{2c^2}
-  \\
-  \\
-  \\
-  \begin{cases}
-    \mathcal{S} \equiv\bigg( v_{cmi}+\dfrac{v^3_{cmi}}{2c^2} \bigg) ~ \dfrac{m_0+m_1}{m_2+m_3}
-    \\
-    \\
-    \mathcal{X} \equiv v_{cmf} 
-  \end{cases}
-  \Longrightarrow \mathcal{X}+\dfrac{\mathcal{X}^3}{2c^2}=\mathcal{S}
-  \\
-  \\
-  \\
-  \mathcal{X}^3+2c^2 \mathcal{X}-2c^2\mathcal{S}=0
-  \\
-  \\
-$
-
-Recall that the general solution to the cubic equation $x^3+px+q=0$ is
-
-$
-  \\
-  x=\sqrt[3]{-\dfrac{q}{2}-\sqrt{(\dfrac{q}{2})^2+(\dfrac{p}{3})^3}}
-  +\sqrt[3]{-\dfrac{q}{2}+\sqrt{(\dfrac{q}{2})^2+(\dfrac{p}{3})^3}}
-  \\
-  \\
-$
-
-It is very important to know that how many solutions our cubic equation has. For positive $p$, 
-there can be only one solution, but for a negative $p$, one, two or three solutions are possible. 
-To figure out how many solutions we get for negative $p$, we need to determine the difference in height 
-between the inflection point and the two extrema.
-
-$
-  \begin{cases}
-    p=2c^2
-    \\
-    \\
-    q=-\mathcal{S}
-  \end{cases}
-  \\
-  \\
-  \\
-  \mathcal{X}=\sqrt[3]{\dfrac{\mathcal{S}}{2}-\sqrt{(\dfrac{\mathcal{S}}{2})^2+(\dfrac{2c^2}{3})^3}}
-  +\sqrt[3]{\dfrac{\mathcal{S}}{2}+\sqrt{(\dfrac{\mathcal{S}}{2})^2+(\dfrac{2c^2}{3})^3}}
-  \\
-  \\
-  \\
-  =\sqrt[3]{\dfrac{\mathcal{S}}{2}-\sqrt{\dfrac{\mathcal{S}^2}{4}+\dfrac{8c^6}{27}}}
-  +\sqrt[3]{\dfrac{\mathcal{S}}{2}+\sqrt{\dfrac{\mathcal{S}^2}{4}+\dfrac{8c^6}{27}}}
-  \\
-  \\
-  \\
 $
 
 \pagebreak
